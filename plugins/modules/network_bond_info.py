@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get network bond information"
-    inspur.sm.network_bond_info:
+    inspur.ispim.network_bond_info:
       provider: "{{ ism }}"
 '''
 

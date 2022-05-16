@@ -1,6 +1,6 @@
 # inspur sm Collection
 
-This repo contains the `inspur.sm` Ansible Collection. Inspur server supports ansible management device,Basic management of the server based on restful interface.
+This repo contains the `inspur.ispim` Ansible Collection. Inspur server supports ansible management device,Basic management of the server based on restful interface.
 
 ## Tested with Ansible
 
@@ -30,22 +30,22 @@ Please check the included content on the [Ansible Galaxy page for this collectio
 
 Before using the General community collection, you need to install the collection with the `ansible-galaxy` CLI:
 
-    ansible-galaxy collection install inspur.sm
+    ansible-galaxy collection install inspur.ispim
 
 You can also include it in a `requirements.yml` file and install it via `ansible-galaxy collection install -r requirements.yml` using the format:
 
 ```yaml
 collections:
-- name: inspur.sm
+- name: inspur.ispim
 ```
 
-See [Ansible Using collections](https://isib-group.github.io/inspur.sm-docs/index.html) for more details.
+See [Ansible Using collections](https://isib-group.github.io/inspur.ispim-docs/index.html) for more details.
 
 ## Contributing to this collection
 
 If you want to develop new content for this collection or improve what is already here, the easiest way to work on the collection is to clone it into one of the configured [`COLLECTIONS_PATH`](https://docs.ansible.com/ansible/latest/reference_appendices/config.html#collections-paths), and work on it there.
 
-You can find more information in the [developer guide for collections](https://docs.ansible.com/ansible/devel/dev_guide/developing_collections.html#contributing-to-collections), and in the [Ansible inspur.sm Guide](https://isib-group.github.io/inspur.sm-docs/index.html).
+You can find more information in the [developer guide for collections](https://docs.ansible.com/ansible/devel/dev_guide/developing_collections.html#contributing-to-collections), and in the [Ansible inspur.ispim Guide](https://ispim.github.io/inspur.ispim-docs/index.html).
 
 ### Running tests
 
@@ -67,11 +67,11 @@ Basic instructions without release branches:
 
 ## Release notes
 
-See the [changelog](https://github.com/ISIB-Group/inspur.sm/blob/main/CHANGELOG.rst).
+See the [changelog](https://github.com/ispim/inspur.ispim/blob/main/CHANGELOG.rst).
 
 ## Roadmap
 
-See [this issue](https://github.com/ISIB-Group/inspur.sm/issues/27) for information on releasing, versioning and deprecation.
+See [this issue](https://github.com/ispim/inspur.ispim/issues/2) for information on releasing, versioning and deprecation.
 
 In general, we plan to release a major version every year, and minor versions every three months. Major versions can contain breaking changes, while minor versions only contain new features and bugfixes.
 

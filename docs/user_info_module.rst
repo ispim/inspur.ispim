@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get user information"
-        inspur.sm.user_info:
+        inspur.ispim.user_info:
           provider: "{{ ism }}"
 
 

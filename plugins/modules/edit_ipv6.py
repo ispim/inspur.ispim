@@ -72,20 +72,20 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set ipv6 information"
-    inspur.sm.edit_ipv6:
+    inspur.ispim.edit_ipv6:
       interface_name: "eth0"
       ipv6_status: "disable"
       provider: "{{ ism }}"
 
   - name: "Set ipv6 information"
-    inspur.sm.edit_ipv6:
+    inspur.ispim.edit_ipv6:
       interface_name: "eth0"
       ipv6_status: "enable"
       ipv6_dhcp_enable: "dhcp"
       provider: "{{ ism }}"
 
   - name: "Set ipv6 information"
-    inspur.sm.edit_ipv6:
+    inspur.ispim.edit_ipv6:
       interface_name: "eth0"
       ipv6_status: "enable"
       ipv6_dhcp_enable: "static"

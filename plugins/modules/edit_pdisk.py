@@ -92,19 +92,19 @@ EXAMPLES = '''
   tasks:
 
   - name: "Show pdisk information"
-    inspur.sm.edit_pdisk:
+    inspur.ispim.edit_pdisk:
       info: "show"
       provider: "{{ ism }}"
 
   - name: "Edit pdisk"
-    inspur.sm.edit_pdisk:
+    inspur.ispim.edit_pdisk:
       ctrl_id: 0
       device_id: 1
       option: "LOC"
       provider: "{{ ism }}"
 
   - name: "M5 Edit pdisk"
-    inspur.sm.edit_pdisk:
+    inspur.ispim.edit_pdisk:
       ctrl_id: 0
       device_id: 1
       option: "HS"

@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get event log policy information"
-    inspur.sm.event_log_policy_info:
+    inspur.ispim.event_log_policy_info:
       provider: "{{ ism }}"
 '''
 

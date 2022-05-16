@@ -102,7 +102,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set KVM"
-    inspur.sm.edit_kvm:
+    inspur.ispim.edit_kvm:
       kvm_encryption: "enable"
       media_attach: "auto"
       keyboard_language: "AD"

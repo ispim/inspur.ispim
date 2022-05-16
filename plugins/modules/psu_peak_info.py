@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get psu peak information"
-    inspur.sm.psu_peak_info:
+    inspur.ispim.psu_peak_info:
       provider: "{{ ism }}"
 '''
 

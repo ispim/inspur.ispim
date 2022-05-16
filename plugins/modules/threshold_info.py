@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get threshold information"
-    inspur.sm.threshold_info:
+    inspur.ispim.threshold_info:
       provider: "{{ ism }}"
 '''
 

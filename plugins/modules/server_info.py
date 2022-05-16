@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get server status information"
-    inspur.sm.server_info:
+    inspur.ispim.server_info:
       provider: "{{ ism }}"
 '''
 

@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get session information"
-        inspur.sm.session_info:
+        inspur.ispim.session_info:
           provider: "{{ ism }}"
 
 

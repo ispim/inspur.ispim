@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get smtp information"
-    inspur.sm.smtp_info:
+    inspur.ispim.smtp_info:
       provider: "{{ ism }}"
 '''
 

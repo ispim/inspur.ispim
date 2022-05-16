@@ -311,7 +311,7 @@ Examples
       tasks:
 
       - name: "Add active directory group information"
-        inspur.sm.ad_group:
+        inspur.ispim.ad_group:
           state: "present"
           name: "wbs"
           domain: "inspur.com"
@@ -321,7 +321,7 @@ Examples
           provider: "{{ ism }}"
 
       - name: "Set active directory group information"
-        inspur.sm.ad_group:
+        inspur.ispim.ad_group:
           state: "present"
           name: "wbs"
           pri: "user"
@@ -329,7 +329,7 @@ Examples
           provider: "{{ ism }}"
 
       - name: "Delete active directory group information"
-        inspur.sm.ad_group:
+        inspur.ispim.ad_group:
           state: "absent"
           name: "wbs"
           provider: "{{ ism }}"

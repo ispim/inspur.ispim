@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get bmc log setting information"
-    inspur.sm.log_setting_info:
+    inspur.ispim.log_setting_info:
       provider: "{{ ism }}"
 '''
 

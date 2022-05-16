@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Reset bmc"
-    inspur.sm.reset_bmc:
+    inspur.ispim.reset_bmc:
       provider: "{{ ism }}"
 '''
 

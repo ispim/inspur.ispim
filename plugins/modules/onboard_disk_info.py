@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get onboard disks information"
-    inspur.sm.onboard_disk_info:
+    inspur.ispim.onboard_disk_info:
       provider: "{{ ism }}"
 '''
 

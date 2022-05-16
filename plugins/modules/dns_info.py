@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get dns information"
-    inspur.sm.dns_info:
+    inspur.ispim.dns_info:
       provider: "{{ ism }}"
 '''
 

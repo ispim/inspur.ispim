@@ -54,7 +54,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set remote image redirection"
-    inspur.sm.edit_connect_media:
+    inspur.ispim.edit_connect_media:
       image_type: "CD"
       op_type: "start"
       image_name: "aa.iso"

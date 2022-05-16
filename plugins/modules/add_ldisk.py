@@ -116,12 +116,12 @@ EXAMPLES = '''
   tasks:
 
   - name: "Show pdisk information"
-    inspur.sm.add_ldisk:
+    inspur.ispim.add_ldisk:
       info: "show"
       provider: "{{ ism }}"
 
   - name: "Add ldisk"
-    inspur.sm.add_ldisk:
+    inspur.ispim.add_ldisk:
       ctrl_id: 0
       level: 1
       size: 1
@@ -136,7 +136,7 @@ EXAMPLES = '''
       provider: "{{ ism }}"
 
   - name: "Add PMC  ldisk"
-    inspur.sm.add_ldisk:
+    inspur.ispim.add_ldisk:
       ctrl_id: 0
       level: 1
       size: 1

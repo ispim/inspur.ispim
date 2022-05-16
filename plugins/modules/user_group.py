@@ -53,21 +53,21 @@ EXAMPLES = '''
   tasks:
 
   - name: "Add user group"
-    inspur.sm.user_group:
+    inspur.ispim.user_group:
       state: "present"
       name: "test"
       pri: "administrator"
       provider: "{{ ism }}"
 
   - name: "Set user group"
-    inspur.sm.user_group:
+    inspur.ispim.user_group:
       state: "present"
       name: "test"
       pri: "user"
       provider: "{{ ism }}"
 
   - name: "Delete user group"
-    inspur.sm.user_group:
+    inspur.ispim.user_group:
       state: "absent"
       name: "test"
       provider: "{{ ism }}"

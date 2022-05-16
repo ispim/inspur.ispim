@@ -241,7 +241,7 @@ Examples
       tasks:
 
       - name: "Set network information"
-        inspur.sm.edit_network:
+        inspur.ispim.edit_network:
           interface_name: "eth0"
           lan_enable: "enable"
           provider: "{{ ism }}"

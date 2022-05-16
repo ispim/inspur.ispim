@@ -345,7 +345,7 @@ Examples
       tasks:
 
       - name: "Set snmp get/set"
-        inspur.sm.edit_snmp:
+        inspur.ispim.edit_snmp:
           community: "test"
           v3username: "Inspur"
           provider: "{{ ism }}"

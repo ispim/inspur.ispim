@@ -42,7 +42,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set power status information"
-    inspur.sm.edit_power_status:
+    inspur.ispim.edit_power_status:
       state: "On"
       provider: "{{ ism }}"
 '''

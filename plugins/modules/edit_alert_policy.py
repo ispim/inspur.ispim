@@ -72,7 +72,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set alert policy"
-    inspur.sm.edit_alert_policy:
+    inspur.ispim.edit_alert_policy:
       id: 1
       status: "enable"
       type: "snmp"
@@ -81,7 +81,7 @@ EXAMPLES = '''
       provider: "{{ ism }}"
 
   - name: "Set alert policy"
-    inspur.sm.edit_alert_policy:
+    inspur.ispim.edit_alert_policy:
       id: 1
       status: "disable"
       provider: "{{ ism }}"

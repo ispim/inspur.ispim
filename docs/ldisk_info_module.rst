@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get logical disks information"
-        inspur.sm.ldisk_info:
+        inspur.ispim.ldisk_info:
           provider: "{{ ism }}"
 
 

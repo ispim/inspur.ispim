@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get auto capture screen information"
-        inspur.sm.auto_capture_info:
+        inspur.ispim.auto_capture_info:
           provider: "{{ ism }}"
 
 

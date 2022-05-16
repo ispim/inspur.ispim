@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get ncsi information"
-        inspur.sm.ncsi_info:
+        inspur.ispim.ncsi_info:
           provider: "{{ ism }}"
 
 

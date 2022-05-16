@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get bmc boot image information"
-    inspur.sm.boot_image_info:
+    inspur.ispim.boot_image_info:
       provider: "{{ ism }}"
 '''
 

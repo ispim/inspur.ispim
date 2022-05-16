@@ -75,7 +75,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Edit kvm"
-    inspur.sm.edit_service:
+    inspur.ispim.edit_service:
       service_name: "kvm"
       state: "active"
       timeout: "1200"

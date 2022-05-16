@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get firmware version information"
-    inspur.sm.fw_version_info:
+    inspur.ispim.fw_version_info:
       provider: "{{ ism }}"
 '''
 

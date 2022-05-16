@@ -255,7 +255,7 @@ Examples
       tasks:
 
       - name: "Get cpld list"
-        inspur.sm.update_cpld:
+        inspur.ispim.update_cpld:
           list: True
           provider: "{{ ism }}"
 

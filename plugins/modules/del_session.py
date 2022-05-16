@@ -41,7 +41,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Delete session"
-    inspur.sm.del_session:
+    inspur.ispim.del_session:
       sid: "223"
       provider: "{{ ism }}"
 '''

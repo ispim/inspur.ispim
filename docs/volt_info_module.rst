@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get volt information"
-        inspur.sm.volt_info:
+        inspur.ispim.volt_info:
           provider: "{{ ism }}"
 
 

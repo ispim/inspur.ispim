@@ -50,7 +50,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set preserve all"
-    inspur.sm.edit_preserve_config:
+    inspur.ispim.edit_preserve_config:
       setting: "all"
       provider: "{{ ism }}"
 

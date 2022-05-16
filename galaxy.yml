@@ -36,7 +36,7 @@ license_file: ''
 
 # A list of tags you want to associate with the collection for indexing/searching. A tag name has the same character
 # requirements as 'namespace' and 'name'
-tags: [inspur, sm, server, manager, ism]
+tags: [inspur, ispim, server, manager, ism]
 
 # Collections that this collection requires to be installed for it to be usable. The key of the dict is the
 # collection label 'namespace.name'. The value is a version range
@@ -45,16 +45,16 @@ tags: [inspur, sm, server, manager, ism]
 dependencies: {}
 
 # The URL of the originating SCM repository
-repository: https://github.com/ISIB-Group/inspur.sm
+repository: https://github.com/ispim/inspur.ispim
 
 # The URL to any online docs
-documentation: https://isib-group.github.io/inspur.sm-docs/index.html
+documentation: https://ispim.github.io/inspur.ispim-docs/index.html
 
 # The URL to the homepage of the collection/project
-homepage: https://github.com/ISIB-Group/inspur.sm
+homepage: https://github.com/ispim/inspur.ispim
 
 # The URL to the collection issue tracker
-issues: https://github.com/ISIB-Group/inspur.sm/issues
+issues: https://github.com/ispim/inspur.ispim/issues
 
 # Ignore files and directories matching the following patterns
 build_ignore:
