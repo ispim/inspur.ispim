@@ -221,7 +221,7 @@ Examples
       tasks:
 
       - name: "Set event log policy"
-        inspur.sm.edit_event_log_policy:
+        inspur.ispim.edit_event_log_policy:
           policy: "Linear"
           provider: "{{ ism }}"
 

@@ -217,7 +217,7 @@ Examples
       tasks:
 
       - name: "Export bios config"
-        inspur.sm.bios_export:
+        inspur.ispim.bios_export:
           file_url: "/home/wbs/bios.conf"
           provider: "{{ ism }}"
 

@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get alert policy"
-    inspur.sm.alert_policy_info:
+    inspur.ispim.alert_policy_info:
       provider: "{{ ism }}"
 '''
 

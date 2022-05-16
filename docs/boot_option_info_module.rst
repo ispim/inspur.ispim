@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get bios boot option"
-        inspur.sm.boot_option_info:
+        inspur.ispim.boot_option_info:
           provider: "{{ ism }}"
 
 

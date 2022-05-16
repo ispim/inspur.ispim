@@ -115,7 +115,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set snmp trap v2c"
-    inspur.sm.edit_snmp_trap:
+    inspur.ispim.edit_snmp_trap:
       version: "2c"
       event_severity: "warning"
       inspur: "test"
@@ -123,7 +123,7 @@ EXAMPLES = '''
       provider: "{{ ism }}"
 
   - name: "Set snmp trap v3"
-    inspur.sm.edit_snmp_trap:
+    inspur.ispim.edit_snmp_trap:
       version: "3"
       event_severity: "all"
       v3username: "Inspur"

@@ -271,13 +271,13 @@ Examples
       tasks:
 
       - name: "Set vlan information"
-        inspur.sm.edit_vlan:
+        inspur.ispim.edit_vlan:
           interface_name: "eth0"
           vlan_status: "disable"
           provider: "{{ ism }}"
 
       - name: "Set vlan information"
-        inspur.sm.edit_vlan:
+        inspur.ispim.edit_vlan:
           interface_name: "eth0"
           vlan_status: "enable"
           vlan_id: 2

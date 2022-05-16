@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get UID information"
-        inspur.sm.uid_info:
+        inspur.ispim.uid_info:
           provider: "{{ ism }}"
 
 

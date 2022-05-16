@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get Virtual Media information"
-        inspur.sm.virtual_media_info:
+        inspur.ispim.virtual_media_info:
           provider: "{{ ism }}"
 
 

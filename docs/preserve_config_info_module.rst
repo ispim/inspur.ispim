@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get preserve config information"
-        inspur.sm.preserve_config_info:
+        inspur.ispim.preserve_config_info:
           provider: "{{ ism }}"
 
 

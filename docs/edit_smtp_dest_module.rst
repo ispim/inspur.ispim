@@ -273,13 +273,13 @@ Examples
       tasks:
 
       - name: "Set smtp dest information"
-        inspur.sm.edit_smtp_dest:
+        inspur.ispim.edit_smtp_dest:
           id: 1
           status: "disable"
           provider: "{{ ism }}"
 
       - name: "Set smtp dest information"
-        inspur.sm.edit_smtp_dest:
+        inspur.ispim.edit_smtp_dest:
           id: 1
           status: "enable"
           address: "100.2.2.2"

@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Reset kvm"
-        inspur.sm.reset_kvm:
+        inspur.ispim.reset_kvm:
           provider: "{{ ism }}"
 
 

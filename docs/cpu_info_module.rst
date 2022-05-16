@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get cpu information"
-        inspur.sm.cpu_info:
+        inspur.ispim.cpu_info:
           provider: "{{ ism }}"
 
 

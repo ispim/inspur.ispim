@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get sensor information"
-    inspur.sm.sensor_info:
+    inspur.ispim.sensor_info:
       provider: "{{ ism }}"
 '''
 

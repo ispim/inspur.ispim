@@ -217,7 +217,7 @@ Examples
       tasks:
 
       - name: "Collect blackbox log"
-        inspur.sm.collect_blackbox:
+        inspur.ispim.collect_blackbox:
           file_url: "/home/wbs/wbs.log"
           provider: "{{ ism }}"
 

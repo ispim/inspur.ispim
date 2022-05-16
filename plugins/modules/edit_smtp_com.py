@@ -108,12 +108,12 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set smtp com information"
-    inspur.sm.edit_smtp_com:
+    inspur.ispim.edit_smtp_com:
       status: "disable"
       provider: "{{ ism }}"
 
   - name: "Set smtp com information"
-    inspur.sm.edit_smtp_com:
+    inspur.ispim.edit_smtp_com:
       status: "enable"
       server_ip: "100.2.2.2"
       email: "inspur@Inspur.com"

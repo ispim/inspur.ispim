@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get self test information"
-    inspur.sm.self_test_info:
+    inspur.ispim.self_test_info:
       provider: "{{ ism }}"
 '''
 

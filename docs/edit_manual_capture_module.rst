@@ -221,7 +221,7 @@ Examples
       tasks:
 
       - name: "Set manual capture screen"
-        inspur.sm.edit_manual_capture:
+        inspur.ispim.edit_manual_capture:
           type: "capture"
           provider: "{{ ism }}"
 

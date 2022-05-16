@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get network link information"
-        inspur.sm.network_link_info:
+        inspur.ispim.network_link_info:
           provider: "{{ ism }}"
 
 

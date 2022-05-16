@@ -373,19 +373,19 @@ Examples
       tasks:
 
       - name: "Set ntp"
-        inspur.sm.edit_ntp:
+        inspur.ispim.edit_ntp:
           auto_date: "enable"
           server2: "time.nist.gov"
           provider: "{{ ism }}"
 
       - name: "Set ntp"
-        inspur.sm.edit_ntp:
+        inspur.ispim.edit_ntp:
           auto_date: "disable"
           ntp_time: "20200609083600"
           provider: "{{ ism }}"
 
       - name: "set ntp"
-        inspur.sm.edit_ntp:
+        inspur.ispim.edit_ntp:
           time_zone: 8
           provider: "{{ ism }}"
 

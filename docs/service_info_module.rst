@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get service information"
-        inspur.sm.service_info:
+        inspur.ispim.service_info:
           provider: "{{ ism }}"
 
 

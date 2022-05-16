@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get physical disks information"
-        inspur.sm.pdisk_info:
+        inspur.ispim.pdisk_info:
           provider: "{{ ism }}"
 
 

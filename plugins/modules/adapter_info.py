@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get adapter information"
-    inspur.sm.adapter_info:
+    inspur.ispim.adapter_info:
       provider: "{{ ism }}"
 '''
 

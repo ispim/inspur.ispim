@@ -112,7 +112,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set smtp information"
-    inspur.sm.edit_smtp:
+    inspur.ispim.edit_smtp:
       interface: "eth0"
       email: "inspur@Inspur.com"
       primary_status: "enable"
@@ -122,7 +122,7 @@ EXAMPLES = '''
       provider: "{{ ism }}"
 
   - name: "Set smtp information"
-    inspur.sm.edit_smtp:
+    inspur.ispim.edit_smtp:
       interface: "eth0"
       email: "inspur@Inspur.com"
       primary_status: "enable"

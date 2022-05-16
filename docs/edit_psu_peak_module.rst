@@ -236,12 +236,12 @@ Examples
       tasks:
 
       - name: "Set psu peak information"
-        inspur.sm.edit_psu_peak:
+        inspur.ispim.edit_psu_peak:
           status: "disable"
           provider: "{{ ism }}"
 
       - name: "Set psu peak information"
-        inspur.sm.edit_psu_peak:
+        inspur.ispim.edit_psu_peak:
           status: "enable"
           time: 10
           provider: "{{ ism }}"

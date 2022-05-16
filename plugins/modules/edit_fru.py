@@ -50,7 +50,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set Fru"
-    inspur.sm.edit_fru:
+    inspur.ispim.edit_fru:
       attribute: "CP"
       value: "Inspur"
       provider: "{{ ism }}"

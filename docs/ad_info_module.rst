@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get active directory information"
-        inspur.sm.ad_info:
+        inspur.ispim.ad_info:
           provider: "{{ ism }}"
 
 

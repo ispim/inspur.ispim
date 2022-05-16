@@ -307,7 +307,7 @@ Examples
       tasks:
 
       - name: "Set threshold information"
-        inspur.sm.edit_threshold:
+        inspur.ispim.edit_threshold:
           name: "GPU1_Temp"
           uc: 94
           unc: 92

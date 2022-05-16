@@ -99,12 +99,12 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set ldap information"
-    inspur.sm.edit_ldap:
+    inspur.ispim.edit_ldap:
       enable: "disable"
       provider: "{{ ism }}"
 
   - name: "Set ldap information"
-    inspur.sm.edit_ldap:
+    inspur.ispim.edit_ldap:
       enable: "enable"
       encry: "SSL"
       address: "100.2.2.2"

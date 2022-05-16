@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get user group information"
-    inspur.sm.user_group_info:
+    inspur.ispim.user_group_info:
       provider: "{{ ism }}"
 '''
 

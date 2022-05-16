@@ -251,7 +251,7 @@ Examples
       tasks:
 
       - name: "Backup server settings"
-        inspur.sm.backup:
+        inspur.ispim.backup:
           bak_file: "/home/wbs/"
           item: "all"
           provider: "{{ ism }}"

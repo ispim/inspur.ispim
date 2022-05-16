@@ -41,7 +41,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Collect logs"
-    inspur.sm.collect_log:
+    inspur.ispim.collect_log:
       file_url: "/home/wbs/test.tar"
       provider: "{{ ism }}"
 '''

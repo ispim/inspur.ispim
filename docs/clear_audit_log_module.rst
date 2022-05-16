@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Clear BMC audit log "
-        inspur.sm.clear_audit_log:
+        inspur.ispim.clear_audit_log:
           provider: "{{ ism }}"
 
 
