@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get ldap group information"
-    inspur.sm.ldap_group_info:
+    inspur.ispim.ldap_group_info:
       provider: "{{ ism }}"
 '''
 

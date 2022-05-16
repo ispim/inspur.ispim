@@ -237,7 +237,7 @@ Examples
       tasks:
 
       - name: "Set psu config information"
-        inspur.sm.edit_psu_config:
+        inspur.ispim.edit_psu_config:
           id: 1
           switch: "active"
           provider: "{{ ism }}"

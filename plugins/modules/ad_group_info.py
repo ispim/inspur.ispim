@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get active directory group information"
-    inspur.sm.ad_group_info:
+    inspur.ispim.ad_group_info:
       provider: "{{ ism }}"
 '''
 

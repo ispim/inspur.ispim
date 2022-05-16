@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get power budget information"
-        inspur.sm.power_budget_info:
+        inspur.ispim.power_budget_info:
           provider: "{{ ism }}"
 
 

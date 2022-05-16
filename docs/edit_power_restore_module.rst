@@ -222,7 +222,7 @@ Examples
       tasks:
 
       - name: "Set power restore information"
-        inspur.sm.edit_power_restore:
+        inspur.ispim.edit_power_restore:
           option: "on"
           provider: "{{ ism }}"
 

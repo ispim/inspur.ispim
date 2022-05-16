@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get KVM information"
-    inspur.sm.kvm_info:
+    inspur.ispim.kvm_info:
       provider: "{{ ism }}"
 '''
 

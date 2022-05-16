@@ -69,12 +69,12 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set active directory information"
-    inspur.sm.edit_ad:
+    inspur.ispim.edit_ad:
       enable: "disable"
       provider: "{{ ism }}"
 
   - name: "Set active directory information"
-    inspur.sm.edit_ad:
+    inspur.ispim.edit_ad:
       enable: "enable"
       name: "inspur"
       code: "123456"

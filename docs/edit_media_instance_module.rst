@@ -392,7 +392,7 @@ Examples
       tasks:
 
       - name: "Set media instance"
-        inspur.sm.edit_media_instance:
+        inspur.ispim.edit_media_instance:
           num_fd: 1
           num_cd: 1
           num_hd: 1

@@ -262,7 +262,7 @@ Examples
       tasks:
 
       - name: "Set bios boot option"
-        inspur.sm.edit_boot_option:
+        inspur.ispim.edit_boot_option:
           device: "PXE"
           effective: "Once"
           mode: "Legacy"

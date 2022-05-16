@@ -363,13 +363,13 @@ Examples
       tasks:
 
       - name: "Edit bmc system log setting"
-        inspur.sm.edit_log_setting:
+        inspur.ispim.edit_log_setting:
           status: "enable"
           type: "both"
           provider: "{{ ism }}"
 
       - name: "Edit bmc audit log setting"
-        inspur.sm.edit_log_setting:
+        inspur.ispim.edit_log_setting:
           audit_status: "enable"
           audit_type: "remote"
           server_addr: "100.2.126.11"

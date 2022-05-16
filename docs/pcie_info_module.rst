@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get PCIE information"
-        inspur.sm.pcie_info:
+        inspur.ispim.pcie_info:
           provider: "{{ ism }}"
 
 

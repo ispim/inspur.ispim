@@ -228,12 +228,12 @@ Examples
       tasks:
 
       - name: "Clear BMC system log"
-        inspur.sm.clear_system_log:
+        inspur.ispim.clear_system_log:
           level: "alert"
           provider: "{{ ism }}"
 
       - name: "Clear BMC system log"
-        inspur.sm.clear_system_log:
+        inspur.ispim.clear_system_log:
           level: "all"
           provider: "{{ ism }}"
 

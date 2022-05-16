@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get Virtual Media Instance information"
-    inspur.sm.media_instance_info:
+    inspur.ispim.media_instance_info:
       provider: "{{ ism }}"
 '''
 

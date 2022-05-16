@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Clear event log"
-    inspur.sm.clear_event_log:
+    inspur.ispim.clear_event_log:
       provider: "{{ ism }}"
 '''
 

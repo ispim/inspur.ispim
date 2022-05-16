@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get snmp get/set information"
-    inspur.sm.snmp_info:
+    inspur.ispim.snmp_info:
       provider: "{{ ism }}"
 '''
 

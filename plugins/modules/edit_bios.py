@@ -52,13 +52,13 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set bios setup"
-    inspur.sm.edit_bios:
+    inspur.ispim.edit_bios:
       attribute: "VMX"
       value: "Disable"
       provider: "{{ ism }}"
 
   - name: "Set bios setup"
-    inspur.sm.edit_bios:
+    inspur.ispim.edit_bios:
       attribute: "VMX"
       value: "Enable"
       provider: "{{ ism }}"

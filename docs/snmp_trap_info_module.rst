@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get snmp trap information"
-        inspur.sm.snmp_trap_info:
+        inspur.ispim.snmp_trap_info:
           provider: "{{ ism }}"
 
 

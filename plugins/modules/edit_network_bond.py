@@ -51,7 +51,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set network bond"
-    inspur.sm.edit_network_bond:
+    inspur.ispim.edit_network_bond:
       bond: "enable"
       interface: "dedicated"
       auto_config: "enable"

@@ -54,18 +54,18 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get bmc system log information"
-    inspur.sm.system_log_info:
+    inspur.ispim.system_log_info:
       level: "alert"
       log_time: "2020-06-01T12:30+08:00"
       provider: "{{ ism }}"
 
   - name: "Get bmc system log information"
-    inspur.sm.system_log_info:
+    inspur.ispim.system_log_info:
       count: 30
       provider: "{{ ism }}"
 
   - name: "Get bmc system log information"
-    inspur.sm.system_log_info:
+    inspur.ispim.system_log_info:
       system_file: "/home/wbs/wbs.log"
       provider: "{{ ism }}"
 '''

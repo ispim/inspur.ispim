@@ -60,12 +60,12 @@ EXAMPLES = '''
   tasks:
 
   - name: "Show ldisk information"
-    inspur.sm.edit_ldisk:
+    inspur.ispim.edit_ldisk:
       info: "show"
       provider: "{{ ism }}"
 
   - name: "Edit ldisk"
-    inspur.sm.edit_ldisk:
+    inspur.ispim.edit_ldisk:
       ctrl_id: 0
       ldisk_id: 1
       option: "LOC"

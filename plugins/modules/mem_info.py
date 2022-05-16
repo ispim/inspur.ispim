@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get memory information"
-    inspur.sm.mem_info:
+    inspur.ispim.mem_info:
       provider: "{{ ism }}"
 '''
 

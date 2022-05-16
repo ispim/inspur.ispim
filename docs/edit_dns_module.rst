@@ -410,12 +410,12 @@ Examples
       tasks:
 
       - name: "Set dns information"
-        inspur.sm.edit_dns:
+        inspur.ispim.edit_dns:
           dns_status: "disable"
           provider: "{{ ism }}"
 
       - name: "Set dns information"
-        inspur.sm.edit_dns:
+        inspur.ispim.edit_dns:
           dns_status: "enable"
           host_cfg: "manual"
           host_name: "123456789"
@@ -428,7 +428,7 @@ Examples
           provider: "{{ ism }}"
 
       - name: "Set dns information"
-        inspur.sm.edit_dns:
+        inspur.ispim.edit_dns:
           dns_status: "enable"
           host_cfg: "manual"
           host_name: "123456789"

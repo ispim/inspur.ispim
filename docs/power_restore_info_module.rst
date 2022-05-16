@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get power restore information"
-        inspur.sm.power_restore_info:
+        inspur.ispim.power_restore_info:
           provider: "{{ ism }}"
 
 

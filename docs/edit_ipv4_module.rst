@@ -308,20 +308,20 @@ Examples
       tasks:
 
       - name: "Set ipv4 information"
-        inspur.sm.edit_ipv4:
+        inspur.ispim.edit_ipv4:
           interface_name: "eth0"
           ipv4_status: "disable"
           provider: "{{ ism }}"
 
       - name: "Set ipv4 information"
-        inspur.sm.edit_ipv4:
+        inspur.ispim.edit_ipv4:
           interface_name: "eth0"
           ipv4_status: "enable"
           ipv4_dhcp_enable: "dhcp"
           provider: "{{ ism }}"
 
       - name: "Set ipv4 information"
-        inspur.sm.edit_ipv4:
+        inspur.ispim.edit_ipv4:
           interface_name: "eth0"
           ipv4_status: "enable"
           ipv4_dhcp_enable: "static"

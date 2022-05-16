@@ -50,12 +50,12 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set restore default auto"
-    inspur.sm.edit_restore_factory_default:
+    inspur.ispim.edit_restore_factory_default:
       mode: "all"
       provider: "{{ ism }}"
 
   - name: "Set restore default manual"
-    inspur.sm.edit_restore_factory_default:
+    inspur.ispim.edit_restore_factory_default:
       mode: "manual"
       override:
         - fru

@@ -54,7 +54,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set ncsi information"
-    inspur.sm.edit_ncsi:
+    inspur.ispim.edit_ncsi:
       mode: "manual"
       nic_type: "PCIE"
       interface_name: "eth0"

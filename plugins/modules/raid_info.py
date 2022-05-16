@@ -36,7 +36,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Get raid information"
-    inspur.sm.raid_info:
+    inspur.ispim.raid_info:
       provider: "{{ ism }}"
 '''
 

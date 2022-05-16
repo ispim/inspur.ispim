@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get backplane information"
-        inspur.sm.backplane_info:
+        inspur.ispim.backplane_info:
           provider: "{{ ism }}"
 
 

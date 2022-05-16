@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get remote images redirection information"
-        inspur.sm.connect_media_info:
+        inspur.ispim.connect_media_info:
           provider: "{{ ism }}"
 
 

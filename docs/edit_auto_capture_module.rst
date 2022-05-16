@@ -221,7 +221,7 @@ Examples
       tasks:
 
       - name: "Set auto capture screen"
-        inspur.sm.edit_auto_capture:
+        inspur.ispim.edit_auto_capture:
           status: "enable"
           provider: "{{ ism }}"
 

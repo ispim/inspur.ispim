@@ -41,7 +41,7 @@ EXAMPLES = '''
   tasks:
 
   - name: "Download manual screenshots"
-    inspur.sm.download_manual_screenshot:
+    inspur.ispim.download_manual_screenshot:
       file_url: "/home/wbs/screen"
       provider: "{{ ism }}"
 '''

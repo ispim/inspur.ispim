@@ -246,7 +246,7 @@ Examples
       tasks:
 
       - name: "Restore server settings"
-        inspur.sm.restore:
+        inspur.ispim.restore:
           bak_file: "/home/wbs/backfile"
           item: "all"
           provider: "{{ ism }}"

@@ -46,13 +46,13 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set uid"
-    inspur.sm.edit_uid:
+    inspur.ispim.edit_uid:
       led: "on"
       time: 10
       provider: "{{ ism }}"
 
   - name: "Set uid"
-    inspur.sm.edit_uid:
+    inspur.ispim.edit_uid:
       led: "off"
       provider: "{{ ism }}"
 '''

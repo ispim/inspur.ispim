@@ -203,7 +203,7 @@ Examples
       tasks:
 
       - name: "Get gpu information"
-        inspur.sm.gpu_info:
+        inspur.ispim.gpu_info:
           provider: "{{ ism }}"
 
 

@@ -251,12 +251,12 @@ Examples
       tasks:
 
       - name: "Set fan information"
-        inspur.sm.edit_fan:
+        inspur.ispim.edit_fan:
           mode: "Automatic"
           provider: "{{ ism }}"
 
       - name: "Set fan information"
-        inspur.sm.edit_fan:
+        inspur.ispim.edit_fan:
           mode: "Manual"
           id: 1
           fan_speed: 80

@@ -60,13 +60,13 @@ EXAMPLES = '''
   tasks:
 
   - name: "Set network link"
-    inspur.sm.edit_network_link:
+    inspur.ispim.edit_network_link:
       interface: "dedicated"
       auto_nego: "enable"
       provider: "{{ ism }}"
 
   - name: "Set network link"
-    inspur.sm.edit_network_link:
+    inspur.ispim.edit_network_link:
       interface: "dedicated"
       auto_nego: "disable"
       link_speed: 100

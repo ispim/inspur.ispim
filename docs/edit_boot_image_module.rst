@@ -225,7 +225,7 @@ Examples
       tasks:
 
       - name: "Set bmc boot image"
-        inspur.sm.edit_boot_image:
+        inspur.ispim.edit_boot_image:
           image: 2
           provider: "{{ ism }}"
 

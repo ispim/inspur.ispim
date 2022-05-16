@@ -202,7 +202,7 @@ Examples
       tasks:
 
       - name: "Get bios setup"
-        inspur.sm.bios_info:
+        inspur.ispim.bios_info:
           provider: "{{ ism }}"
 
 

@@ -311,7 +311,7 @@ Examples
       tasks:
 
       - name: "Add ldap group information"
-        inspur.sm.ldap_group:
+        inspur.ispim.ldap_group:
           state: "present"
           name: "wbs"
           base: "cn=manager"
@@ -321,7 +321,7 @@ Examples
           provider: "{{ ism }}"
 
       - name: "Set ldap group information"
-        inspur.sm.ldap_group:
+        inspur.ispim.ldap_group:
           state: "present"
           name: "wbs"
           pri: "user"
@@ -329,7 +329,7 @@ Examples
           provider: "{{ ism }}"
 
       - name: "Delete ldap group information"
-        inspur.sm.ldap_group:
+        inspur.ispim.ldap_group:
           state: "absent"
           name: "wbs"
           provider: "{{ ism }}"

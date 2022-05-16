@@ -398,12 +398,12 @@ Examples
       tasks:
 
       - name: "Set local media"
-        inspur.sm.edit_virtual_media:
+        inspur.ispim.edit_virtual_media:
           local_media_support: "Enable"
           provider: "{{ ism }}"
 
       - name: "Set remote media"
-        inspur.sm.edit_virtual_media:
+        inspur.ispim.edit_virtual_media:
           remote_media_support: "Enable"
           mount_type: 0
           same_settings: 0
