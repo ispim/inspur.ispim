@@ -6,6 +6,7 @@ releases:
       - Add all modules.
     fragments:
     - 1-edit_modules.yml
+    - 2-edit_models_project_name.yml
     modules:
     - description: Manage active directory group information.
       name: ad_group
