@@ -14,9 +14,11 @@ module: edit_fan
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set fan information.
+short_description: Set fan information
 description:
    - Set fan information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     mode:
         description:

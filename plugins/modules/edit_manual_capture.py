@@ -14,9 +14,11 @@ module: edit_manual_capture
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set manual capture screen.
+short_description: Set manual capture screen
 description:
    - Set manual capture screen on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     type:
         description:

@@ -14,9 +14,11 @@ module: power_budget_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get power budget information.
+short_description: Get power budget information
 description:
    - Get power budget information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

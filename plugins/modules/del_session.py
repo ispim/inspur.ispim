@@ -14,9 +14,11 @@ module: del_session
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Delete session.
+short_description: Delete session
 description:
    - Delete session on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     sid:
         description:

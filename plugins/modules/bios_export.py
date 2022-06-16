@@ -14,9 +14,11 @@ module: bios_export
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Export BIOS config.
+short_description: Export BIOS config
 description:
    - Export BIOS config on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     file_url:
         description:

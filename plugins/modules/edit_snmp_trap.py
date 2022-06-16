@@ -14,9 +14,11 @@ module: edit_snmp_trap
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set snmp trap.
+short_description: Set snmp trap
 description:
    - Set snmp trap on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     version:
         description:

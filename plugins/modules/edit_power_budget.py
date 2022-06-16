@@ -14,9 +14,11 @@ module: edit_power_budget
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set power budget information.
+short_description: Set power budget information
 description:
    - Set power budget information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     range:
         description:

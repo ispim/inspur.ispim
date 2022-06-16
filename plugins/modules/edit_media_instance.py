@@ -17,6 +17,8 @@ author:
 short_description: Set Virtual Media Instance
 description:
    - Set Virtual Media Instance on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     num_fd:
         description:

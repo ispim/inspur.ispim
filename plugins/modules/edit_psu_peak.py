@@ -14,9 +14,11 @@ module: edit_psu_peak
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set psu peak information.
+short_description: Set psu peak information
 description:
    - Set psu peak information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     status:
         description:

@@ -14,9 +14,11 @@ module: edit_boot_option
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set BIOS boot options.
+short_description: Set BIOS boot options
 description:
    - Set BIOS boot options on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     device:
         description:

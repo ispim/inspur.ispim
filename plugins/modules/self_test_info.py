@@ -14,9 +14,11 @@ module: self_test_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get self test information.
+short_description: Get self test information
 description:
    - Get self test information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

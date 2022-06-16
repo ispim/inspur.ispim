@@ -14,9 +14,11 @@ module: user_group
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Manage user group.
+short_description: Manage user group
 description:
    - Manage user group on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     state:
         description:

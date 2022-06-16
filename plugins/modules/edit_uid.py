@@ -14,9 +14,11 @@ module: edit_uid
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set UID.
+short_description: Set UID
 description:
    - Set UID on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     led:
         description:

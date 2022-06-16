@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.clear_audit_log -- Clear BMC audit log.
-++++++++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.clear_audit_log -- Clear BMC audit log
++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -48,6 +48,13 @@ Synopsis
 
 
 .. Requirements
+
+Requirements
+------------
+The below requirements are needed on the host that executes this module.
+
+- Python 3.7+
+- inspursmsdk
 
 
 .. Options
@@ -177,6 +184,11 @@ Parameters
 
 .. Notes
 
+Notes
+-----
+
+.. note::
+   - Does not support ``check_mode``.
 
 .. Seealso
 

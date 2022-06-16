@@ -14,9 +14,11 @@ module: system_log_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get BMC system log information.
+short_description: Get BMC system log information
 description:
    - Get BMC system log information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options:
     level:
         description:

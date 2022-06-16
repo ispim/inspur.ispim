@@ -14,9 +14,11 @@ module: download_auto_screenshot
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Download auto screenshots.
+short_description: Download auto screenshots
 description:
    - Download auto screenshots on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     file_url:
         description:

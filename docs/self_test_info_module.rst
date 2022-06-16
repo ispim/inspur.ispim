@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.self_test_info -- Get self test information.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.self_test_info -- Get self test information
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -48,6 +48,13 @@ Synopsis
 
 
 .. Requirements
+
+Requirements
+------------
+The below requirements are needed on the host that executes this module.
+
+- Python 3.7+
+- inspursmsdk
 
 
 .. Options
@@ -177,6 +184,11 @@ Parameters
 
 .. Notes
 
+Notes
+-----
+
+.. note::
+   - Supports ``check_mode``.
 
 .. Seealso
 

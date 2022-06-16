@@ -14,9 +14,11 @@ module: power_consumption_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get power consumption information.
+short_description: Get power consumption information
 description:
    - Get power consumption information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

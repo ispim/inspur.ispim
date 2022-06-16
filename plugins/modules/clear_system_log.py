@@ -14,9 +14,11 @@ module: clear_system_log
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Clear BMC system log.
+short_description: Clear BMC system log
 description:
    - Clear BMC system log on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     level:
         description:

@@ -14,9 +14,11 @@ module: edit_alert_policy
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set alert policy.
+short_description: Set alert policy
 description:
    - Set alert policy on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     id:
         description:

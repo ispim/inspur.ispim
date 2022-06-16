@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.edit_boot_image -- Set bmc boot image.
-+++++++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.edit_boot_image -- Set bmc boot image
+++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -48,6 +48,13 @@ Synopsis
 
 
 .. Requirements
+
+Requirements
+------------
+The below requirements are needed on the host that executes this module.
+
+- Python 3.7+
+- inspursmsdk
 
 
 .. Options
@@ -200,6 +207,11 @@ Parameters
 
 .. Notes
 
+Notes
+-----
+
+.. note::
+   - Does not support ``check_mode``.
 
 .. Seealso
 

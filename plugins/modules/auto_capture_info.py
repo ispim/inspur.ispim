@@ -14,9 +14,11 @@ module: auto_capture_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get auto capture screen information.
+short_description: Get auto capture screen information
 description:
    - Get auto capture screen information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

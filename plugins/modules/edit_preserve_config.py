@@ -14,9 +14,11 @@ module: edit_preserve_config
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set preserve config.
+short_description: Set preserve config
 description:
    - Set preserve config on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     setting:
         description:

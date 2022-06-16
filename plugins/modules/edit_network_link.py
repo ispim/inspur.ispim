@@ -14,9 +14,11 @@ module: edit_network_link
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set network link.
+short_description: Set network link
 description:
    - Set network link on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     interface:
         description:

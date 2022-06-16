@@ -14,9 +14,11 @@ module: update_fw
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Update firmware.
+short_description: Update firmware
 description:
    - Update firmware on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     url:
         description:

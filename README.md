@@ -24,7 +24,7 @@ Thes modules require the following to be installed on the control node:
 
 ## Included content
 
-Please check the included content on the [Ansible Galaxy page for this collection](https://galaxy.ansible.com/inspur/sm)
+Please check the included content on the [Ansible Galaxy page for this collection](https://galaxy.ansible.com/inspur/ispim)
 
 ## Using this collection
 

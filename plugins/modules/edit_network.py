@@ -14,9 +14,11 @@ module: edit_network
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set network information.
+short_description: Set network information
 description:
    - Set netowrk information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     interface_name:
         description:

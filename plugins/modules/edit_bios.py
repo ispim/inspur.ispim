@@ -14,9 +14,11 @@ module: edit_bios
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set BIOS setup attributes.
+short_description: Set BIOS setup attributes
 description:
    - Set BIOS setup attributes on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     attribute:
         description:

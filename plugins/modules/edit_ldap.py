@@ -14,9 +14,11 @@ module: edit_ldap
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set ldap information.
+short_description: Set ldap information
 description:
    - Set ldap information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     enable:
         description:

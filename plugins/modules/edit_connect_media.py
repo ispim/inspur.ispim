@@ -17,6 +17,8 @@ author:
 short_description: Start/Stop virtual media Image
 description:
    - Start/Stop virtual media Image on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     image_type:
         description:

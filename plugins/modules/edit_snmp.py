@@ -14,9 +14,11 @@ module: edit_snmp
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set snmp.
+short_description: Set snmp
 description:
    - Set snmp on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     version:
         description:

@@ -14,9 +14,11 @@ module: alert_policy_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get alert policy.
+short_description: Get alert policy
 description:
    - Get alert policy on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

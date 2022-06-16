@@ -14,9 +14,11 @@ module: network_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get network information.
+short_description: Get network information
 description:
    - Get netowrk information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

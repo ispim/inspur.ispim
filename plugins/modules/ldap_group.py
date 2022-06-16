@@ -14,9 +14,11 @@ module: ldap_group
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Manage ldap group information.
+short_description: Manage ldap group information
 description:
    - Manage ldap group information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     state:
         description:

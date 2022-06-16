@@ -14,9 +14,11 @@ module: edit_auto_capture
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set auto capture screen.
+short_description: Set auto capture screen
 description:
    - Set auto capture screen on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     status:
         description:

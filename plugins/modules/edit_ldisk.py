@@ -14,9 +14,11 @@ module: edit_ldisk
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set logical disk.
+short_description: Set logical disk
 description:
    - Set logical disk on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     info:
         description:

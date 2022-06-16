@@ -14,9 +14,11 @@ module: boot_option_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get BIOS boot options.
+short_description: Get BIOS boot options
 description:
    - Get BIOS boot options on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

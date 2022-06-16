@@ -14,9 +14,11 @@ module: edit_ad
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set active directory information.
+short_description: Set active directory information
 description:
    - Set active directory information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     enable:
         description:
