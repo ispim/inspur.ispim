@@ -14,9 +14,11 @@ module: ad_group
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Manage active directory group information.
+short_description: Manage active directory group information
 description:
    - Manage active directory group information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     state:
         description:

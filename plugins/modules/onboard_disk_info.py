@@ -14,9 +14,11 @@ module: onboard_disk_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get onboard disks information.
+short_description: Get onboard disks information
 description:
    - Get onboard disks information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

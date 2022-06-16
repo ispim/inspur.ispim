@@ -14,9 +14,11 @@ module: psu_peak_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get psu peak information.
+short_description: Get psu peak information
 description:
    - Get psu peak information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

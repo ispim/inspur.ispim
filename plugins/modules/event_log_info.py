@@ -14,9 +14,11 @@ module: event_log_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get event log information.
+short_description: Get event log information
 description:
    - Get event log information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options:
     log_time:
         description:

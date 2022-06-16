@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.onboard_disk_info -- Get onboard disks information.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.onboard_disk_info -- Get onboard disks information
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -48,6 +48,13 @@ Synopsis
 
 
 .. Requirements
+
+Requirements
+------------
+The below requirements are needed on the host that executes this module.
+
+- Python 3.7+
+- inspursmsdk
 
 
 .. Options
@@ -177,6 +184,11 @@ Parameters
 
 .. Notes
 
+Notes
+-----
+
+.. note::
+   - Supports ``check_mode``.
 
 .. Seealso
 

@@ -14,9 +14,11 @@ module: edit_vlan
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set vlan information.
+short_description: Set vlan information
 description:
    - Set vlan information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     interface_name:
         description:

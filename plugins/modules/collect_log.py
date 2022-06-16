@@ -14,9 +14,11 @@ module: collect_log
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Collect logs.
+short_description: Collect logs
 description:
    - Collect logs on Inspur server,it takes about 5 minutes.
+notes:
+   - Does not support C(check_mode).
 options:
     file_url:
         description:

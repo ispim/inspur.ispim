@@ -14,9 +14,11 @@ module: restore
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Restore server settings.
+short_description: Restore server settings
 description:
    -  Restore server settings on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     bak_file:
         description:

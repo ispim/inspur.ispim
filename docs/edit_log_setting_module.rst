@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.edit_log_setting -- Set bmc system and audit log setting.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.edit_log_setting -- Set bmc system and audit log setting
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -48,6 +48,13 @@ Synopsis
 
 
 .. Requirements
+
+Requirements
+------------
+The below requirements are needed on the host that executes this module.
+
+- Python 3.7+
+- inspursmsdk
 
 
 .. Options
@@ -338,6 +345,11 @@ Parameters
 
 .. Notes
 
+Notes
+-----
+
+.. note::
+   - Does not support ``check_mode``.
 
 .. Seealso
 

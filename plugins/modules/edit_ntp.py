@@ -14,9 +14,11 @@ module: edit_ntp
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set NTP.
+short_description: Set NTP
 description:
    - Set NTP on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     auto_date:
         description:

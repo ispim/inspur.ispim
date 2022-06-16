@@ -14,9 +14,11 @@ module: edit_virtual_media
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set virtual media.
+short_description: Set virtual media
 description:
    - Set virtual media on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     local_media_support:
         description:

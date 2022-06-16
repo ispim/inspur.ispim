@@ -14,9 +14,11 @@ module: snmp_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get snmp get/set information.
+short_description: Get snmp get/set information
 description:
    - Get snmp get/set information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

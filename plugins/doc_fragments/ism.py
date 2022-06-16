@@ -53,4 +53,7 @@ options:
         the remote device. If the value is not specified in the task, the
         value of environment variable C(ANSIBLE_NET_PASSWORD) will be used instead.
     type: str
+requirements:
+  - Python 3.7+
+  - inspursmsdk
 '''

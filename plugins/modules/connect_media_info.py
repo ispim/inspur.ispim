@@ -14,9 +14,11 @@ module: connect_media_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get remote images redirection information.
+short_description: Get remote images redirection information
 description:
    - Get remote images redirection information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

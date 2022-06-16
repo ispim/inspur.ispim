@@ -14,9 +14,11 @@ module: edit_pdisk
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set physical disk.
+short_description: Set physical disk
 description:
    - Set physical disk on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     info:
         description:

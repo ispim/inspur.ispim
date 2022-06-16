@@ -14,9 +14,11 @@ module: update_cpld
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Update CPLD.
+short_description: Update CPLD
 description:
    - Update CPLD on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     list:
         description:

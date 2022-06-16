@@ -14,9 +14,11 @@ module: add_ldisk
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Create logical disk.
+short_description: Create logical disk
 description:
    - Create logical disk on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     info:
         description:

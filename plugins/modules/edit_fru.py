@@ -14,9 +14,11 @@ module: edit_fru
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set fru settings.
+short_description: Set fru settings
 description:
    - Set fru settings on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     attribute:
         description:

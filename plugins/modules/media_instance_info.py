@@ -14,9 +14,11 @@ module: media_instance_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get Virtual Media Instance information.
+short_description: Get Virtual Media Instance information
 description:
    - Get Virtual Media Instance information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

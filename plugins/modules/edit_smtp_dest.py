@@ -14,10 +14,12 @@ module: edit_smtp_dest
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set SMTP information.
+short_description: Set SMTP information
 description:
    - Set SMTP dest information on Inspur server.
    - Only the M6 models support this feature.
+notes:
+   - Does not support C(check_mode).
 options:
     id:
         description:

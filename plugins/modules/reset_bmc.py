@@ -14,9 +14,11 @@ module: reset_bmc
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: BMC reset.
+short_description: BMC reset
 description:
    - BMC reset on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

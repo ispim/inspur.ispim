@@ -14,9 +14,11 @@ module: edit_dns
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set dns information.
+short_description: Set dns information
 description:
    - Set dns information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     dns_status:
         description:

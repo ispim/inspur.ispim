@@ -14,9 +14,11 @@ module: edit_kvm
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set KVM.
+short_description: Set KVM
 description:
    - Set KVM on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     client_type:
         description:

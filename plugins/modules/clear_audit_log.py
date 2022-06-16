@@ -14,9 +14,11 @@ module: clear_audit_log
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Clear BMC audit log.
+short_description: Clear BMC audit log
 description:
    - Clear BMC audit log on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

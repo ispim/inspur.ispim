@@ -14,9 +14,11 @@ module: edit_restore_factory_default
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set preserver config.
+short_description: Set preserver config
 description:
    - Set preserver config on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     mode:
         description:

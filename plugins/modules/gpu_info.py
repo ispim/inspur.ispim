@@ -14,10 +14,12 @@ module: gpu_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get GPU information.
+short_description: Get GPU information
 description:
    - Get GPU information on Inspur server.
    - Only the M6 models support this feature.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

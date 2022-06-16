@@ -14,9 +14,11 @@ module: edit_boot_image
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set bmc boot image.
+short_description: Set bmc boot image
 description:
    - Set bmc boot image on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     image:
         description:

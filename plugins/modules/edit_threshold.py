@@ -14,9 +14,11 @@ module: edit_threshold
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set threshold information.
+short_description: Set threshold information
 description:
    - Set threshold information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     name:
         description:

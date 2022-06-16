@@ -14,9 +14,11 @@ module: edit_service
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set service settings.
+short_description: Set service settings
 description:
    - Set service settings on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     service_name:
         description:

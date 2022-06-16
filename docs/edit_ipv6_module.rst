@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.edit_ipv6 -- Set ipv6 information.
-+++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.edit_ipv6 -- Set ipv6 information
+++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -48,6 +48,13 @@ Synopsis
 
 
 .. Requirements
+
+Requirements
+------------
+The below requirements are needed on the host that executes this module.
+
+- Python 3.7+
+- inspursmsdk
 
 
 .. Options
@@ -299,6 +306,11 @@ Parameters
 
 .. Notes
 
+Notes
+-----
+
+.. note::
+   - Does not support ``check_mode``.
 
 .. Seealso
 

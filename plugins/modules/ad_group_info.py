@@ -14,9 +14,11 @@ module: ad_group_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get active directory group information.
+short_description: Get active directory group information
 description:
    - Get active directory group information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

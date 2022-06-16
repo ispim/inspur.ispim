@@ -14,9 +14,11 @@ module: clear_event_log
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Clear event log.
+short_description: Clear event log
 description:
    - Clear event log on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

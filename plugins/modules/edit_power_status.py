@@ -14,9 +14,11 @@ module: edit_power_status
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set power status information.
+short_description: Set power status information
 description:
    - Set power status information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     state:
         description:

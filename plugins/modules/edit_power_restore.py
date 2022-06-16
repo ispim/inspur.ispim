@@ -14,9 +14,11 @@ module: edit_power_restore
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set power restore information.
+short_description: Set power restore information
 description:
    - Set power restore information on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     option:
         description:

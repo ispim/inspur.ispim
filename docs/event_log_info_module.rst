@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.event_log_info -- Get event log information.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.event_log_info -- Get event log information
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -48,6 +48,13 @@ Synopsis
 
 
 .. Requirements
+
+Requirements
+------------
+The below requirements are needed on the host that executes this module.
+
+- Python 3.7+
+- inspursmsdk
 
 
 .. Options
@@ -222,6 +229,11 @@ Parameters
 
 .. Notes
 
+Notes
+-----
+
+.. note::
+   - Supports ``check_mode``.
 
 .. Seealso
 

@@ -14,9 +14,11 @@ module: bios_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get BIOS setup.
+short_description: Get BIOS setup
 description:
    - Get BIOS setup on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism

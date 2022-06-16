@@ -14,9 +14,11 @@ module: collect_blackbox
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Collect blackbox log.
+short_description: Collect blackbox log
 description:
    - Collect blackbox log on Inspur server.
+notes:
+   - Does not support C(check_mode).
 options:
     file_url:
         description:

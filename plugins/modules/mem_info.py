@@ -14,9 +14,11 @@ module: mem_info
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Get memory information.
+short_description: Get memory information
 description:
    - Get memory information on Inspur server.
+notes:
+   - Supports C(check_mode).
 options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism
