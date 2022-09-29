@@ -1,0 +1,4 @@
+minor_changes:
+  - Edit_dns adds new field to M6 model.
+  - Modify the authors and tags fields in Galaxy.yml.
+  - Update the document.
