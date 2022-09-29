@@ -390,3 +390,11 @@ releases:
     fragments:
     - 3-edit_doc_info.yml
     release_date: '2022-06-16'
+  1.1.0:
+    changes:
+      minor_changes:
+      - Edit_dns adds new field to M6 model.
+      - Modify the authors and tags fields in Galaxy.yml.
+    fragments:
+    - 10-dns-changes.yml
+    release_date: '2022-09-29'
