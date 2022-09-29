@@ -5,6 +5,15 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v1.1.0
+======
+
+Minor Changes
+-------------
+
+- Edit_dns adds new field to M6 model.
+- Modify the authors and tags fields in Galaxy.yml.
+
 v1.0.1
 ======
 
