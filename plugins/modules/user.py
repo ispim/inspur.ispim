@@ -33,7 +33,7 @@ options:
     uname:
         description:
             - User name.
-            - Required when I(uid=None).
+            - Required when uid is None.
         type: str
     upass:
         description:
