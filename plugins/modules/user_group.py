@@ -126,7 +126,7 @@ EXAMPLES = '''
       general: "enable"
       kvm: "enable"
       provider: "{{ ism }}"
-      
+
   - name: "Delete user group"
     inspur.ispim.user_group:
       state: "absent"

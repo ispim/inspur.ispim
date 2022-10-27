@@ -62,7 +62,7 @@ options:
     read_write_community:
         description:
             - Read And Write Community,Community should between 1 and 16 characters.
-            - Only the M6 models support this feature.            
+            - Only the M6 models support this feature.
         choices: ['enable', 'disable']
         type: str
     v3username:
