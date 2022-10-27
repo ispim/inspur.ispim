@@ -26,6 +26,12 @@ options:
         choices: ['True', 'False']
         default: False
         type: bool
+    domain:
+        description:
+            - Domain id.
+            - Required when I(range=False).
+        choices: ['system', 'cpu']
+        type: str
     action:
         description:
             - Type to action.
@@ -213,6 +219,7 @@ class Power(object):
 def main():
     argument_spec = dict(
         range=dict(type='bool', default=False, choices=[True, False]),
+        domain=dict(type='str', required=False, choices=['system', 'cpu']),
         action=dict(type='str', required=False, choices=['add', 'delete', 'open', 'close']),
         id=dict(type='int', required=False, choices=[1, 2, 3, 4]),
         watts=dict(type='int', required=False),

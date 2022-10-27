@@ -10,61 +10,64 @@ __metaclass__ = type
 
 DOCUMENTATION = '''
 ---
-module: edit_ad
+module: edit_log_setting
 version_added: "1.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set active directory information
+short_description: Set bmc system and audit log setting
 description:
-   - Set active directory information on Inspur server.
+   - Set bmc system and audit log setting on Inspur server.
 notes:
    - Does not support C(check_mode).
 options:
-    enable:
+    status:
         description:
-            - Active Directory Authentication Status.
+            - System Log Status.
         choices: ['enable', 'disable']
         type: str
-    ssl_enable:
+    type:
         description:
-            - Active Directory SSL Status.
-        choices: ['enable', 'disable']
+            - System log type.
+        choices: ['local', 'remote', 'both']
         type: str
-    name:
+    file_size:
         description:
-            - Secret Username.
-        type: str
-    code:
-        description:
-            - Secret Password.
-        type: str
-    timeout:
-        description:
-            - The Time Out configuration(15-300).
-            - Only the M5 model supports this parameter.
+            - File Size(3-65535bytes), set when type is local(default 30000).
         type: int
-    domain:
+    audit_status:
         description:
-            - User Domain Name.
+            - Audit Log Status.
+        choices: ['enable', 'disable']
         type: str
-    addr1:
+    audit_type:
         description:
-            - Domain Controller Server Address1.
+            - Audit log type.
+        choices: ['local', 'remote', 'both']
         type: str
-    addr2:
+    rotate_count:
         description:
-            - Domain Controller Server Address2.
+            - Rotate Count, set when type is local, 0-delete old files(default), 1-bak old files.
+        choices: [0, 1]
+        type: int
+    server_addr:
+        description:
+            - Server Address, set when type is remote.
         type: str
-    addr3:
+    server_port:
         description:
-            - Domain Controller Server Address3.
+            - Server Port(0-65535), set when type is remote.
+        type: int
+    protocol_type:
+        description:
+            - Protocol Type, set when type is remote.
+        choices: ['UDP', 'TCP']
         type: str
 extends_documentation_fragment:
     - inspur.ispim.ism
 '''
 
 EXAMPLES = '''
-- name: Ad test
+- name: Edit log setting test
   hosts: ism
   connection: local
   gather_facts: no
@@ -76,21 +79,18 @@ EXAMPLES = '''
 
   tasks:
 
-  - name: "Set active directory information"
-    inspur.ispim.edit_ad:
-      enable: "disable"
+  - name: "Edit bmc system log setting"
+    inspur.ispim.edit_log_setting:
+      status: "enable"
+      type: "both"
       provider: "{{ ism }}"
 
-  - name: "Set active directory information"
-    inspur.ispim.edit_ad:
-      enable: "enable"
-      name: "inspur"
-      code: "123456"
-      timeout: 120
-      domain: "inspur.com"
-      addr1: "100.2.2.2"
-      addr2: "100.2.2.3"
-      addr3: "100.2.2.4"
+  - name: "Edit bmc audit log setting"
+    inspur.ispim.edit_log_setting:
+      audit_status: "enable"
+      audit_type: "remote"
+      server_addr: "100.2.126.11"
+      server_port: "514"
       provider: "{{ ism }}"
 '''
 
@@ -113,7 +113,7 @@ from ansible.module_utils.basic import AnsibleModule
 from ansible_collections.inspur.ispim.plugins.module_utils.ism import (ism_argument_spec, get_connection)
 
 
-class AD(object):
+class LogSetting(object):
     def __init__(self, argument_spec):
         self.spec = argument_spec
         self.module = None
@@ -127,7 +127,7 @@ class AD(object):
             argument_spec=self.spec, supports_check_mode=False)
 
     def run_command(self):
-        self.module.params['subcommand'] = 'setad'
+        self.module.params['subcommand'] = 'setbmclogsettings'
         self.results = get_connection(self.module)
         if self.results['State'] == 'Success':
             self.results['changed'] = True
@@ -144,19 +144,19 @@ class AD(object):
 
 def main():
     argument_spec = dict(
-        enable=dict(type='str', required=False, choices=['enable', 'disable']),
-        ssl_enable=dict(type='str', required=False, choices=['enable', 'disable']),
-        name=dict(type='str', required=False),
-        code=dict(type='str', required=False),
-        timeout=dict(type='int', required=False),
-        domain=dict(type='str', required=False),
-        addr1=dict(type='str', required=False),
-        addr2=dict(type='str', required=False),
-        addr3=dict(type='str', required=False),
+        status=dict(type='str', required=False, choices=['enable', 'disable']),
+        type=dict(type='str', required=False, choices=['local', 'remote', 'both']),
+        file_size=dict(type='int', required=False),
+        audit_status=dict(type='str', required=False, choices=['enable', 'disable']),
+        audit_type=dict(type='str', required=False, choices=['local', 'remote', 'both']),
+        rotate_count=dict(type='int', required=False, choices=[0, 1]),
+        server_addr=dict(type='str', required=False),
+        server_port=dict(type='int', required=False),
+        protocol_type=dict(type='str', required=False, choices=['UDP', 'TCP']),
     )
     argument_spec.update(ism_argument_spec)
-    ad_obj = AD(argument_spec)
-    ad_obj.work()
+    log_obj = LogSetting(argument_spec)
+    log_obj.work()
 
 
 if __name__ == '__main__':
