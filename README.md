@@ -20,7 +20,7 @@ Thes modules require the following to be installed on the control node:
 
 * Python 3.7 or later
 * [Ansible](http://www.ansible.com) 2.10 or later
-* [Inspur support] [inspursmsdk](https://github.com/ISIB-Group/inspursmsdk)
+* [Inspur support] [inspursmsdk](https://github.com/ISIB-Group/inspursmsdk) 1.5.0 or later
 
 ## Included content
 
