@@ -23,8 +23,9 @@ options:
     version:
         description:
             - SNMP trap version.
-        choices: ['1', '2c', '3']
-        type: str
+            - Only the M6 model supports C(0) Settings.
+        choices: [0, 1, 2, 3]
+        type: int
     event_severity:
         description:
             - Event Severity.
@@ -118,7 +119,7 @@ EXAMPLES = '''
 
   - name: "Set snmp trap v2c"
     inspur.ispim.edit_snmp_trap:
-      version: "2c"
+      version: 2
       event_severity: "warning"
       inspur: "test"
       system_name: "Inspur"
@@ -126,7 +127,7 @@ EXAMPLES = '''
 
   - name: "Set snmp trap v3"
     inspur.ispim.edit_snmp_trap:
-      version: "3"
+      version: 3
       event_severity: "all"
       v3username: "Inspur"
       engine_id: "1234567890"
@@ -188,7 +189,7 @@ class SNMP(object):
 
 def main():
     argument_spec = dict(
-        version=dict(type='str', required=False, choices=['1', '2c', '3']),
+        version=dict(type='int', required=False, choices=[0, 1, 2, 3]),
         event_severity=dict(type='str', required=False, choices=['all', 'warning', 'critical']),
         community=dict(type='str', required=False),
         host_id=dict(type='str', required=False, choices=['HostName', 'SerialNum', 'AssertTag']),

@@ -46,6 +46,7 @@ options:
     mount:
         description:
             - Whether to mount virtual media.
+            - Only the M5 model supports this parameter.
         choices: ['Enable', 'Disable']
         type: str
     remote_server_address:
@@ -101,7 +102,7 @@ EXAMPLES = '''
   - name: "Set remote media"
     inspur.ispim.edit_virtual_media:
       remote_media_support: "Enable"
-      mount_type: 0
+      mount_type: 'CD'
       same_settings: 0
       mount: "Enable"
       remote_server_address: "100.2.28.203"
