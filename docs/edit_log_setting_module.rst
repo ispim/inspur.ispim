@@ -43,6 +43,8 @@ Synopsis
 .. Description
 
 - Set bmc system and audit log setting on Inspur server.
+- Only the M5 models support this feature.
+
 
 .. Aliases
 

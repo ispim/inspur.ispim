@@ -11,8 +11,8 @@ These are the plugins in the inspur.ispim collection
     :maxdepth: 1
 
 
-Module Plugins
---------------
+Modules
+-------
 
 * :ref:`ad_group <ansible_collections.inspur.ispim.ad_group_module>` -- Manage active directory group information
 * :ref:`ad_group_info <ansible_collections.inspur.ispim.ad_group_info_module>` -- Get active directory group information
