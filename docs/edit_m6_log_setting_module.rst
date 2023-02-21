@@ -28,7 +28,7 @@ inspur.ispim.edit_m6_log_setting -- Set bmc system and audit log setting
 
 .. version_added
 
-.. versionadded:: 2.0.0 of inspur.ispim
+.. versionadded:: 1.3.0 of inspur.ispim
 
 .. contents::
    :local:

@@ -11,7 +11,7 @@ __metaclass__ = type
 DOCUMENTATION = '''
 ---
 module: edit_m6_log_setting
-version_added: "2.0.0"
+version_added: "1.3.0"
 author:
     - WangBaoshan (@ispim)
 short_description: Set bmc system and audit log setting
