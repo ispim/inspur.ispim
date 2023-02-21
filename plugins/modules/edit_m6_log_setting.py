@@ -163,8 +163,6 @@ def main():
         server_port=dict(type='int', required=False),
         log_type=dict(type='str', required=False, choices=['idl', 'audit', 'both']),
         test=dict(type='bool', required=False, default=False),
-
-
     )
     argument_spec.update(ism_argument_spec)
     log_obj = LogSetting(argument_spec)
