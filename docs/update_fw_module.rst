@@ -143,7 +143,7 @@ Parameters
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>(BMC)active mode, Manual or Auto(default).</div>
+                                            <div>active mode, Manual or Auto(default).</div>
                                                         </td>
             </tr>
                                 <tr>

@@ -49,6 +49,12 @@ options:
             - Power budget watts of add.
             - Required when I(action=add).
         type: int
+    except_action:
+        description:
+            - Except action, 0 is do nothing, 1 is send alert, 2 is shutdown system, 3 is shutdown system and send alert.
+            - Only the M7 model supports this parameter.
+        choices: [0, 1, 2, 3]
+        type: int
     start1:
         description:
             - Pause period of add, start time, from 0 to 24.
@@ -223,6 +229,7 @@ def main():
         action=dict(type='str', required=False, choices=['add', 'delete', 'open', 'close']),
         id=dict(type='int', required=False, choices=[1, 2, 3, 4]),
         watts=dict(type='int', required=False),
+        except_action=dict(type='int', required=False, choices=[0, 1, 2, 3]),
         start1=dict(type='int', required=False),
         end1=dict(type='int', required=False),
         week1=dict(type='list', elements='str', required=False),

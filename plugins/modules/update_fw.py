@@ -27,7 +27,7 @@ options:
         type: str
     mode:
         description:
-            - (BMC)active mode, Manual or Auto(default).
+            - active mode, Manual or Auto(default).
         default: Auto
         choices: ['Auto', 'Manual']
         type: str

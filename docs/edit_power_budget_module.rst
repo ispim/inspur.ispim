@@ -190,6 +190,28 @@ Parameters
             </tr>
                                 <tr>
                                                                 <td colspan="2">
+                    <div class="ansibleOptionAnchor" id="parameter-except_action"></div>
+                    <b>except_action</b>
+                    <a class="ansibleOptionLink" href="#parameter-except_action" title="Permalink to this option"></a>
+                    <div style="font-size: small">
+                        <span style="color: purple">integer</span>
+                                                                    </div>
+                                                        </td>
+                                <td>
+                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
+                                                                                                                                                                <li>0</li>
+                                                                                                                                                                                                <li>1</li>
+                                                                                                                                                                                                <li>2</li>
+                                                                                                                                                                                                <li>3</li>
+                                                                                    </ul>
+                                                                            </td>
+                                                                <td>
+                                            <div>Except action, 0 is do nothing, 1 is send alert, 2 is shutdown system, 3 is shutdown system and send alert.</div>
+                                            <div>Only the M7 model supports this parameter.</div>
+                                                        </td>
+            </tr>
+                                <tr>
+                                                                <td colspan="2">
                     <div class="ansibleOptionAnchor" id="parameter-host"></div>
                     <b>host</b>
                     <a class="ansibleOptionLink" href="#parameter-host" title="Permalink to this option"></a>

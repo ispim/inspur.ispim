@@ -222,6 +222,7 @@ Parameters
                                             <div>Two types of VM attach mode are available.</div>
                                             <div>Attach is Immediately attaches Virtual Media to the server upon bootup.</div>
                                             <div>Auto is Attaches Virtual Media to the server only when a virtual media session is started.</div>
+                                            <div>Only the M5 model supports this parameter.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -337,6 +338,7 @@ Parameters
                                                                                                                                                             </td>
                                                                 <td>
                                             <div>Number of times to be retried in case a KVM failure occurs.Retry count ranges from 1 to 20.</div>
+                                            <div>Only the M5 model supports this parameter.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -352,6 +354,7 @@ Parameters
                                                                                                                                                             </td>
                                                                 <td>
                                             <div>The Identification for retry time interval configuration (5-30) seconds.</div>
+                                            <div>Only the M5 model supports this parameter.</div>
                                                         </td>
             </tr>
                                 <tr>

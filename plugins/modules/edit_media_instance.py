@@ -59,6 +59,7 @@ options:
     secure_channel:
         description:
             - Check this option to enable encrypt media recirection packets.
+            - Only the M5/M6 model supports this parameter.
         choices: ['Enable', 'Disable']
         type: str
     power_save_mode:

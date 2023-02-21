@@ -399,7 +399,7 @@ Examples
 
       - name: "set ntp"
         inspur.ispim.edit_ntp:
-          time_zone: 8
+          time_zone: "8"
           provider: "{{ ism }}"
 
 

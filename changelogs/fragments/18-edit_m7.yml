@@ -1,0 +1,14 @@
+minor_changes:
+  - "Modify the description of the slot and vname fields of the add_ldisk module."
+  - "Modify the description information of the backup module item field."
+  - "Change the description of the edit_bios module file_url field."
+  - "Modify the description of the media_attach, retry_count, and retry_time_interval fields of the edit_kvm module."
+  - "Modify the description of the secure_channel field of the edit_media_instance module."
+  - "Modify the supporting properties and description information of the edit_ncsi module edit_ncsi field."
+  - "Modify the edit_ntp module example."
+  - "The edit_power_budget module adds the except_action field."
+  - "Modify the edit_snmp_trap module version field description information."
+  - "Modify the restore module example."
+  - "Modify the mode field description information of update_fw module."
+  - "Modify the name field description of the user_group module."
+
