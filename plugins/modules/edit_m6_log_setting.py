@@ -152,6 +152,7 @@ class LogSetting(object):
         self.run_command()
         self.show_result()
 
+
 def main():
     argument_spec = dict(
         status=dict(type='str', required=False, choices=['enable', 'disable']),
