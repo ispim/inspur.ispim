@@ -452,7 +452,7 @@ Parameters
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>SNMP trap version.</div>
+                                            <div>SNMP trap version,1 is v1,2 is v2c(v2),3 is v3,0 is disable snmp trap.</div>
                                             <div>Only the M6 model supports <code>0</code> Settings.</div>
                                                         </td>
             </tr>

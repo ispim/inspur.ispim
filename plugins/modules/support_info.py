@@ -10,33 +10,22 @@ __metaclass__ = type
 
 DOCUMENTATION = '''
 ---
-module: restore
-version_added: "1.0.0"
+module: support_info
+version_added: "1.3.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Restore server settings
+short_description: Get support information
 description:
-   -  Restore server settings on Inspur server.
+   - Get the Inspur server support list information.
 notes:
-   - Does not support C(check_mode).
-options:
-    bak_file:
-        description:
-            - select backup file or bak folder.
-        required: true
-        type: str
-    item:
-        description:
-            - select export item.
-            - Only the M5 model supports this parameter.
-        choices: ['all', 'network', 'dns', 'service', 'ntp', 'smtp', 'snmptrap', 'ad', 'ldap', 'user','bios']
-        type: str
+   - Supports C(check_mode).
+options: {}
 extends_documentation_fragment:
     - inspur.ispim.ism
 '''
 
 EXAMPLES = '''
-- name: Restore test
+- name: support list test
   hosts: ism
   connection: local
   gather_facts: no
@@ -48,10 +37,8 @@ EXAMPLES = '''
 
   tasks:
 
-  - name: "Restore server settings"
-    inspur.ispim.restore:
-      bak_file: "/home/wbs/backfile"
-      item: "all"
+  - name: "Get support information"
+    inspur.ispim.support_info:
       provider: "{{ ism }}"
 '''
 
@@ -74,7 +61,7 @@ from ansible.module_utils.basic import AnsibleModule
 from ansible_collections.inspur.ispim.plugins.module_utils.ism import (ism_argument_spec, get_connection)
 
 
-class Restore(object):
+class Support(object):
     def __init__(self, argument_spec):
         self.spec = argument_spec
         self.module = None
@@ -85,13 +72,11 @@ class Restore(object):
         """Init module object"""
 
         self.module = AnsibleModule(
-            argument_spec=self.spec, supports_check_mode=False)
+            argument_spec=self.spec, supports_check_mode=True)
 
     def run_command(self):
-        self.module.params['subcommand'] = 'restore'
+        self.module.params['subcommand'] = 'support_model'
         self.results = get_connection(self.module)
-        if self.results['State'] == 'Success':
-            self.results['changed'] = True
 
     def show_result(self):
         """Show result"""
@@ -104,13 +89,10 @@ class Restore(object):
 
 
 def main():
-    argument_spec = dict(
-        bak_file=dict(type='str', required=True),
-        item=dict(type='str', required=False, choices=['all', 'network', 'dns', 'service', 'ntp', 'smtp', 'snmptrap', 'ad', 'ldap', 'user', 'bios']),
-    )
+    argument_spec = dict()
     argument_spec.update(ism_argument_spec)
-    restore_obj = Restore(argument_spec)
-    restore_obj.work()
+    support_obj = Support(argument_spec)
+    support_obj.work()
 
 
 if __name__ == '__main__':

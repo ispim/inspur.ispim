@@ -30,7 +30,8 @@ options:
             - Export item.
             - The values for M5 modules are 'all', 'network', 'service', 'ntp', 'snmptrap', 'dns', 'smtp', 'ad', 'ldap', 'user','bios'.
             - The values for M6 modules are 'all', 'network', 'service', 'ntp', 'snmptrap',  'kvm', 'ipmi', 'authentication', 'syslog'.
-        choices: ['all', 'network', 'service', 'ntp', 'snmptrap', 'dns', 'smtp', 'ad', 'ldap', 'user','bios', 'kvm', 'ipmi', 'authentication', 'syslog']
+            - The values for M7 modules are 'all', 'network', 'service', 'syslog', 'ncsi'.
+        choices: ['all', 'network', 'service', 'ntp', 'snmptrap', 'dns', 'smtp', 'ad', 'ldap', 'user','bios', 'kvm', 'ipmi', 'authentication', 'syslog', 'ncsi']
         required: true
         type: str
 extends_documentation_fragment:
@@ -107,7 +108,7 @@ def main():
     argument_spec = dict(
         bak_file=dict(type='str', required=True),
         item=dict(type='str', required=True, choices=['all', 'network', 'service', 'ntp', 'snmptrap', 'dns', 'smtp', 'ad',
-                                                      'ldap', 'user', 'bios', 'kvm', 'ipmi', 'authentication', 'syslog']),
+                                                      'ldap', 'user', 'bios', 'kvm', 'ipmi', 'authentication', 'syslog', 'ncsi']),
     )
     argument_spec.update(ism_argument_spec)
     backup_obj = Backup(argument_spec)

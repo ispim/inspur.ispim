@@ -4,7 +4,7 @@
 
 .. Anchors
 
-.. _ansible_collections.inspur.ispim.edit_media_instance_module:
+.. _ansible_collections.inspur.ispim.edit_m6_log_setting_module:
 
 .. Anchors: short name for ansible.builtin
 
@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.edit_media_instance -- Set Virtual Media Instance
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.edit_m6_log_setting -- Set bmc system and audit log setting
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -24,11 +24,11 @@ inspur.ispim.edit_media_instance -- Set Virtual Media Instance
 
     To install it use: :code:`ansible-galaxy collection install inspur.ispim`.
 
-    To use it in a playbook, specify: :code:`inspur.ispim.edit_media_instance`.
+    To use it in a playbook, specify: :code:`inspur.ispim.edit_m6_log_setting`.
 
 .. version_added
 
-.. versionadded:: 1.0.0 of inspur.ispim
+.. versionadded:: 1.3.0 of inspur.ispim
 
 .. contents::
    :local:
@@ -42,7 +42,8 @@ Synopsis
 
 .. Description
 
-- Set Virtual Media Instance on Inspur server.
+- Set bmc system and audit log setting on Inspur server.
+- Only the M6 models support this feature.
 
 
 .. Aliases
@@ -88,135 +89,62 @@ Parameters
             </tr>
                                 <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-kvm_num_cd"></div>
-                    <b>kvm_num_cd</b>
-                    <a class="ansibleOptionLink" href="#parameter-kvm_num_cd" title="Permalink to this option"></a>
+                    <div class="ansibleOptionAnchor" id="parameter-host_tag"></div>
+                    <b>host_tag</b>
+                    <a class="ansibleOptionLink" href="#parameter-host_tag" title="Permalink to this option"></a>
                     <div style="font-size: small">
-                        <span style="color: purple">integer</span>
+                        <span style="color: purple">string</span>
                                                                     </div>
                                                         </td>
                                 <td>
                                                                                                                             <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>0</li>
-                                                                                                                                                                                                <li>1</li>
-                                                                                                                                                                                                <li>2</li>
-                                                                                                                                                                                                <li>3</li>
-                                                                                                                                                                                                <li>4</li>
+                                                                                                                                                                <li>HostName</li>
+                                                                                                                                                                                                <li>SerialNum</li>
+                                                                                                                                                                                                <li>AssertTag</li>
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>Select the number of Remote KVM CD/DVD devices that support for virtual Media redirection,</div>
-                                            <div>The max support number of html5 KVM is 2 and java KVM is 4.</div>
+                                            <div>System log host tag,set when <em>status=enable</em>.</div>
                                                         </td>
             </tr>
                                 <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-kvm_num_fd"></div>
-                    <b>kvm_num_fd</b>
-                    <a class="ansibleOptionLink" href="#parameter-kvm_num_fd" title="Permalink to this option"></a>
+                    <div class="ansibleOptionAnchor" id="parameter-level"></div>
+                    <b>level</b>
+                    <a class="ansibleOptionLink" href="#parameter-level" title="Permalink to this option"></a>
                     <div style="font-size: small">
-                        <span style="color: purple">integer</span>
+                        <span style="color: purple">string</span>
                                                                     </div>
                                                         </td>
                                 <td>
                                                                                                                             <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>0</li>
-                                                                                                                                                                                                <li>1</li>
-                                                                                                                                                                                                <li>2</li>
-                                                                                                                                                                                                <li>3</li>
-                                                                                                                                                                                                <li>4</li>
+                                                                                                                                                                <li>Critical</li>
+                                                                                                                                                                                                <li>Warning</li>
+                                                                                                                                                                                                <li>Info</li>
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>Select the number of Remote KVM floppy devices that support for Virtual Media redirection.</div>
+                                            <div>Events Level,set when <em>status=enable</em>.</div>
                                                         </td>
             </tr>
                                 <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-kvm_num_hd"></div>
-                    <b>kvm_num_hd</b>
-                    <a class="ansibleOptionLink" href="#parameter-kvm_num_hd" title="Permalink to this option"></a>
+                    <div class="ansibleOptionAnchor" id="parameter-log_type"></div>
+                    <b>log_type</b>
+                    <a class="ansibleOptionLink" href="#parameter-log_type" title="Permalink to this option"></a>
                     <div style="font-size: small">
-                        <span style="color: purple">integer</span>
+                        <span style="color: purple">string</span>
                                                                     </div>
                                                         </td>
                                 <td>
                                                                                                                             <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>0</li>
-                                                                                                                                                                                                <li>1</li>
-                                                                                                                                                                                                <li>2</li>
-                                                                                                                                                                                                <li>3</li>
-                                                                                                                                                                                                <li>4</li>
+                                                                                                                                                                <li>idl</li>
+                                                                                                                                                                                                <li>audit</li>
+                                                                                                                                                                                                <li>both</li>
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>Select the number of Remote KVM Hard disk devices to support for Virtual Media redirection.</div>
-                                                        </td>
-            </tr>
-                                <tr>
-                                                                <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-num_cd"></div>
-                    <b>num_cd</b>
-                    <a class="ansibleOptionLink" href="#parameter-num_cd" title="Permalink to this option"></a>
-                    <div style="font-size: small">
-                        <span style="color: purple">integer</span>
-                                                                    </div>
-                                                        </td>
-                                <td>
-                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>0</li>
-                                                                                                                                                                                                <li>1</li>
-                                                                                                                                                                                                <li>2</li>
-                                                                                                                                                                                                <li>3</li>
-                                                                                                                                                                                                <li>4</li>
-                                                                                    </ul>
-                                                                            </td>
-                                                                <td>
-                                            <div>Select the number of CD/DVD devices that support for Virtual Media redirection.</div>
-                                                        </td>
-            </tr>
-                                <tr>
-                                                                <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-num_fd"></div>
-                    <b>num_fd</b>
-                    <a class="ansibleOptionLink" href="#parameter-num_fd" title="Permalink to this option"></a>
-                    <div style="font-size: small">
-                        <span style="color: purple">integer</span>
-                                                                    </div>
-                                                        </td>
-                                <td>
-                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>0</li>
-                                                                                                                                                                                                <li>1</li>
-                                                                                                                                                                                                <li>2</li>
-                                                                                                                                                                                                <li>3</li>
-                                                                                                                                                                                                <li>4</li>
-                                                                                    </ul>
-                                                                            </td>
-                                                                <td>
-                                            <div>Select the number of floppy devices that support for Virtual Media redirection.</div>
-                                                        </td>
-            </tr>
-                                <tr>
-                                                                <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-num_hd"></div>
-                    <b>num_hd</b>
-                    <a class="ansibleOptionLink" href="#parameter-num_hd" title="Permalink to this option"></a>
-                    <div style="font-size: small">
-                        <span style="color: purple">integer</span>
-                                                                    </div>
-                                                        </td>
-                                <td>
-                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>0</li>
-                                                                                                                                                                                                <li>1</li>
-                                                                                                                                                                                                <li>2</li>
-                                                                                                                                                                                                <li>3</li>
-                                                                                                                                                                                                <li>4</li>
-                                                                                    </ul>
-                                                                            </td>
-                                                                <td>
-                                            <div>Select the number of harddisk devices that support for Virtual Media redirection.</div>
+                                            <div>Remote Log Type,set when server_id is not none.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -236,21 +164,21 @@ Parameters
             </tr>
                                 <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-power_save_mode"></div>
-                    <b>power_save_mode</b>
-                    <a class="ansibleOptionLink" href="#parameter-power_save_mode" title="Permalink to this option"></a>
+                    <div class="ansibleOptionAnchor" id="parameter-protocol_type"></div>
+                    <b>protocol_type</b>
+                    <a class="ansibleOptionLink" href="#parameter-protocol_type" title="Permalink to this option"></a>
                     <div style="font-size: small">
                         <span style="color: purple">string</span>
                                                                     </div>
                                                         </td>
                                 <td>
                                                                                                                             <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>Enable</li>
-                                                                                                                                                                                                <li>Disable</li>
+                                                                                                                                                                <li>UDP</li>
+                                                                                                                                                                                                <li>TCP</li>
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>Check this option to enable Power Save Mode in BMC.</div>
+                                            <div>Protocol Type,set when <em>status=enable</em>.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -319,41 +247,91 @@ Parameters
                     
                                 <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-sd_media"></div>
-                    <b>sd_media</b>
-                    <a class="ansibleOptionLink" href="#parameter-sd_media" title="Permalink to this option"></a>
+                    <div class="ansibleOptionAnchor" id="parameter-server_addr"></div>
+                    <b>server_addr</b>
+                    <a class="ansibleOptionLink" href="#parameter-server_addr" title="Permalink to this option"></a>
                     <div style="font-size: small">
                         <span style="color: purple">string</span>
                                                                     </div>
                                                         </td>
                                 <td>
-                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>Enable</li>
-                                                                                                                                                                                                <li>Disable</li>
-                                                                                    </ul>
-                                                                            </td>
+                                                                                                                                                            </td>
                                                                 <td>
-                                            <div>Check this option to enable SD Media support in BMC.</div>
+                                            <div>Server Address,set when server_id is not none.</div>
                                                         </td>
             </tr>
                                 <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-secure_channel"></div>
-                    <b>secure_channel</b>
-                    <a class="ansibleOptionLink" href="#parameter-secure_channel" title="Permalink to this option"></a>
+                    <div class="ansibleOptionAnchor" id="parameter-server_id"></div>
+                    <b>server_id</b>
+                    <a class="ansibleOptionLink" href="#parameter-server_id" title="Permalink to this option"></a>
+                    <div style="font-size: small">
+                        <span style="color: purple">integer</span>
+                                                                    </div>
+                                                        </td>
+                                <td>
+                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
+                                                                                                                                                                <li>0</li>
+                                                                                                                                                                                                <li>1</li>
+                                                                                                                                                                                                <li>2</li>
+                                                                                                                                                                                                <li>3</li>
+                                                                                    </ul>
+                                                                            </td>
+                                                                <td>
+                                            <div>Syslog Server ID,set when <em>status=enable</em>.</div>
+                                                        </td>
+            </tr>
+                                <tr>
+                                                                <td colspan="2">
+                    <div class="ansibleOptionAnchor" id="parameter-server_port"></div>
+                    <b>server_port</b>
+                    <a class="ansibleOptionLink" href="#parameter-server_port" title="Permalink to this option"></a>
+                    <div style="font-size: small">
+                        <span style="color: purple">integer</span>
+                                                                    </div>
+                                                        </td>
+                                <td>
+                                                                                                                                                            </td>
+                                                                <td>
+                                            <div>Server Address,set when server_id is not none.</div>
+                                                        </td>
+            </tr>
+                                <tr>
+                                                                <td colspan="2">
+                    <div class="ansibleOptionAnchor" id="parameter-status"></div>
+                    <b>status</b>
+                    <a class="ansibleOptionLink" href="#parameter-status" title="Permalink to this option"></a>
                     <div style="font-size: small">
                         <span style="color: purple">string</span>
                                                                     </div>
                                                         </td>
                                 <td>
                                                                                                                             <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>Enable</li>
-                                                                                                                                                                                                <li>Disable</li>
+                                                                                                                                                                <li>enable</li>
+                                                                                                                                                                                                <li>disable</li>
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>Check this option to enable encrypt media recirection packets.</div>
-                                            <div>Only the M5/M6 model supports this parameter.</div>
+                                            <div>System Log Status.</div>
+                                                        </td>
+            </tr>
+                                <tr>
+                                                                <td colspan="2">
+                    <div class="ansibleOptionAnchor" id="parameter-test"></div>
+                    <b>test</b>
+                    <a class="ansibleOptionLink" href="#parameter-test" title="Permalink to this option"></a>
+                    <div style="font-size: small">
+                        <span style="color: purple">boolean</span>
+                                                                    </div>
+                                                        </td>
+                                <td>
+                                                                                                                                                                                                                    <ul style="margin: 0; padding: 0"><b>Choices:</b>
+                                                                                                                                                                <li><div style="color: blue"><b>no</b>&nbsp;&larr;</div></li>
+                                                                                                                                                                                                <li>yes</li>
+                                                                                    </ul>
+                                                                            </td>
+                                                                <td>
+                                            <div>Test remote log settings,set when server_id is not none.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -393,7 +371,7 @@ Examples
 .. code-block:: yaml+jinja
 
     
-    - name: Media instance test
+    - name: Edit log setting test
       hosts: ism
       connection: local
       gather_facts: no
@@ -405,17 +383,27 @@ Examples
 
       tasks:
 
-      - name: "Set media instance"
-        inspur.ispim.edit_media_instance:
-          num_fd: 1
-          num_cd: 1
-          num_hd: 1
-          kvm_num_fd: 1
-          kvm_num_cd: 1
-          kvm_num_hd: 1
-          sd_media: "Enable"
-          secure_channel: "Enable"
-          power_save_mode: "Enable"
+      - name: "Edit bmc system log setting"
+        inspur.ispim.edit_m6_log_setting:
+          status: "disable"
+          provider: "{{ ism }}"
+
+      - name: "Edit bmc audit log setting"
+        inspur.ispim.edit_m6_log_setting:
+          status: "enable"
+          host_tag: "HostName"
+          level: "Info"
+          protocol_type: "TCP"
+          server_id: 0
+          server_addr: "100.2.126.11"
+          server_port: 514
+          log_type: "both"
+          provider: "{{ ism }}"
+
+      - name: "test bmc audit log"
+        inspur.ispim.edit_m6_log_setting:
+          server_id: 0
+          test: True
           provider: "{{ ism }}"
 
 

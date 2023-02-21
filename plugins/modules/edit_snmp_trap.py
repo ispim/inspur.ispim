@@ -22,7 +22,7 @@ notes:
 options:
     version:
         description:
-            - SNMP trap version.
+            - SNMP trap version,1 is v1,2 is v2c(v2),3 is v3,0 is disable snmp trap.
             - Only the M6 model supports C(0) Settings.
         choices: [0, 1, 2, 3]
         type: int

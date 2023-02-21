@@ -36,6 +36,7 @@ options:
             - Two types of VM attach mode are available.
             - Attach is Immediately attaches Virtual Media to the server upon bootup.
             - Auto is Attaches Virtual Media to the server only when a virtual media session is started.
+            - Only the M5 model supports this parameter.
         choices: ['attach', 'auto']
         type: str
     keyboard_language:
@@ -50,10 +51,12 @@ options:
     retry_count:
         description:
             - Number of times to be retried in case a KVM failure occurs.Retry count ranges from 1 to 20.
+            - Only the M5 model supports this parameter.
         type: int
     retry_time_interval:
         description:
             - The Identification for retry time interval configuration (5-30) seconds.
+            - Only the M5 model supports this parameter.
         type: int
     local_monitor_off:
         description:

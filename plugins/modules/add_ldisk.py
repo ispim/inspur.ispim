@@ -86,7 +86,7 @@ options:
     slot:
         description:
             - Slot Num,input multiple slotNumber like 0,1,2....
-            - Required when I(Info=None) and controller type is LSI.
+            - Required when I(Info=None) and controller type is LSI or PMC.
         type: list
         elements: int
     accelerator:
@@ -98,7 +98,7 @@ options:
     vname:
         description:
             - Virtual drive name.
-            - Required when I(Info=None) and controller type is PMC.
+            - Required when I(Info=None) and controller type is PMC or server model is M7.
         type: str
 extends_documentation_fragment:
     - inspur.ispim.ism
@@ -143,6 +143,7 @@ EXAMPLES = '''
       level: 1
       size: 1
       accelerator: 1
+      slot: 0,1
       vname: "test"
       provider: "{{ ism }}"
 '''

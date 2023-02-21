@@ -4,7 +4,7 @@
 
 .. Anchors
 
-.. _ansible_collections.inspur.ispim.restore_module:
+.. _ansible_collections.inspur.ispim.support_info_module:
 
 .. Anchors: short name for ansible.builtin
 
@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.restore -- Restore server settings
-+++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.support_info -- Get support information
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -24,11 +24,11 @@ inspur.ispim.restore -- Restore server settings
 
     To install it use: :code:`ansible-galaxy collection install inspur.ispim`.
 
-    To use it in a playbook, specify: :code:`inspur.ispim.restore`.
+    To use it in a playbook, specify: :code:`inspur.ispim.support_info`.
 
 .. version_added
 
-.. versionadded:: 1.0.0 of inspur.ispim
+.. versionadded:: 1.3.0 of inspur.ispim
 
 .. contents::
    :local:
@@ -42,7 +42,7 @@ Synopsis
 
 .. Description
 
-- Restore server settings on Inspur server.
+- Get the Inspur server support list information.
 
 
 .. Aliases
@@ -73,21 +73,6 @@ Parameters
         </tr>
                     <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-bak_file"></div>
-                    <b>bak_file</b>
-                    <a class="ansibleOptionLink" href="#parameter-bak_file" title="Permalink to this option"></a>
-                    <div style="font-size: small">
-                        <span style="color: purple">string</span>
-                                                 / <span style="color: red">required</span>                    </div>
-                                                        </td>
-                                <td>
-                                                                                                                                                            </td>
-                                                                <td>
-                                            <div>select backup file or bak folder.</div>
-                                                        </td>
-            </tr>
-                                <tr>
-                                                                <td colspan="2">
                     <div class="ansibleOptionAnchor" id="parameter-host"></div>
                     <b>host</b>
                     <a class="ansibleOptionLink" href="#parameter-host" title="Permalink to this option"></a>
@@ -99,35 +84,6 @@ Parameters
                                                                                                                                                             </td>
                                                                 <td>
                                             <div>Specifies the DNS host name or address for connecting to the remote device over the specified transport.  The value of host is used as the destination address for the transport.</div>
-                                                        </td>
-            </tr>
-                                <tr>
-                                                                <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-item"></div>
-                    <b>item</b>
-                    <a class="ansibleOptionLink" href="#parameter-item" title="Permalink to this option"></a>
-                    <div style="font-size: small">
-                        <span style="color: purple">string</span>
-                                                                    </div>
-                                                        </td>
-                                <td>
-                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>all</li>
-                                                                                                                                                                                                <li>network</li>
-                                                                                                                                                                                                <li>dns</li>
-                                                                                                                                                                                                <li>service</li>
-                                                                                                                                                                                                <li>ntp</li>
-                                                                                                                                                                                                <li>smtp</li>
-                                                                                                                                                                                                <li>snmptrap</li>
-                                                                                                                                                                                                <li>ad</li>
-                                                                                                                                                                                                <li>ldap</li>
-                                                                                                                                                                                                <li>user</li>
-                                                                                                                                                                                                <li>bios</li>
-                                                                                    </ul>
-                                                                            </td>
-                                                                <td>
-                                            <div>select export item.</div>
-                                            <div>Only the M5 model supports this parameter.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -233,7 +189,7 @@ Notes
 -----
 
 .. note::
-   - Does not support ``check_mode``.
+   - Supports ``check_mode``.
 
 .. Seealso
 
@@ -246,7 +202,7 @@ Examples
 .. code-block:: yaml+jinja
 
     
-    - name: Restore test
+    - name: support list test
       hosts: ism
       connection: local
       gather_facts: no
@@ -258,10 +214,8 @@ Examples
 
       tasks:
 
-      - name: "Restore server settings"
-        inspur.ispim.restore:
-          bak_file: "/home/wbs/backfile"
-          item: "all"
+      - name: "Get support information"
+        inspur.ispim.support_info:
           provider: "{{ ism }}"
 
 

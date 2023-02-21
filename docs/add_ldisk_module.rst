@@ -398,7 +398,7 @@ Parameters
                                                                                                                                                             </td>
                                                                 <td>
                                             <div>Slot Num,input multiple slotNumber like 0,1,2....</div>
-                                            <div>Required when <em>Info=None</em> and controller type is LSI.</div>
+                                            <div>Required when <em>Info=None</em> and controller type is LSI or PMC.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -429,7 +429,7 @@ Parameters
                                                                                                                                                             </td>
                                                                 <td>
                                             <div>Virtual drive name.</div>
-                                            <div>Required when <em>Info=None</em> and controller type is PMC.</div>
+                                            <div>Required when <em>Info=None</em> and controller type is PMC or server model is M7.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -513,6 +513,7 @@ Examples
           level: 1
           size: 1
           accelerator: 1
+          slot: 0,1
           vname: "test"
           provider: "{{ ism }}"
 

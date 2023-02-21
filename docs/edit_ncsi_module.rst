@@ -157,6 +157,7 @@ Parameters
                                                                                                                             <ul style="margin: 0; padding: 0"><b>Choices:</b>
                                                                                                                                                                 <li>PHY</li>
                                                                                                                                                                                                 <li>OCP</li>
+                                                                                                                                                                                                <li>OCP1</li>
                                                                                                                                                                                                 <li>PCIE</li>
                                                                                                                                                                                                 <li>auto</li>
                                                                                                                                                                                                 <li>Disable</li>
@@ -165,7 +166,7 @@ Parameters
                                                                 <td>
                                             <div>Nic type.</div>
                                             <div>Only NF3280A6 and NF3180A6 model supports <code>Disable</code> Settings, but not support <code>PHY</code> Settings.</div>
-                                            <div>M6 model only support <code>OCP</code>,<code>PCIE</code> settings.</div>
+                                            <div>M6 model only support <code>OCP</code>,<code>OCP1</code>,<code>PCIE</code> settings.</div>
                                                         </td>
             </tr>
                                 <tr>

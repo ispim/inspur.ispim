@@ -58,6 +58,7 @@ Modules
 * :ref:`edit_ldap <ansible_collections.inspur.ispim.edit_ldap_module>` -- Set ldap information
 * :ref:`edit_ldisk <ansible_collections.inspur.ispim.edit_ldisk_module>` -- Set logical disk
 * :ref:`edit_log_setting <ansible_collections.inspur.ispim.edit_log_setting_module>` -- Set bmc system and audit log setting
+* :ref:`edit_m6_log_setting <ansible_collections.inspur.ispim.edit_m6_log_setting_module>` -- Set bmc system and audit log setting
 * :ref:`edit_manual_capture <ansible_collections.inspur.ispim.edit_manual_capture_module>` -- Set manual capture screen
 * :ref:`edit_media_instance <ansible_collections.inspur.ispim.edit_media_instance_module>` -- Set Virtual Media Instance
 * :ref:`edit_ncsi <ansible_collections.inspur.ispim.edit_ncsi_module>` -- Set ncsi information
@@ -126,6 +127,7 @@ Modules
 * :ref:`smtp_info <ansible_collections.inspur.ispim.smtp_info_module>` -- Get SMTP information
 * :ref:`snmp_info <ansible_collections.inspur.ispim.snmp_info_module>` -- Get snmp get/set information
 * :ref:`snmp_trap_info <ansible_collections.inspur.ispim.snmp_trap_info_module>` -- Get snmp trap information
+* :ref:`support_info <ansible_collections.inspur.ispim.support_info_module>` -- Get support information
 * :ref:`system_log_info <ansible_collections.inspur.ispim.system_log_info_module>` -- Get BMC system log information
 * :ref:`temp_info <ansible_collections.inspur.ispim.temp_info_module>` -- Get temp information
 * :ref:`threshold_info <ansible_collections.inspur.ispim.threshold_info_module>` -- Get threshold information
