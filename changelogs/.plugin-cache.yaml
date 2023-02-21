@@ -228,6 +228,11 @@ plugins:
       name: edit_log_setting
       namespace: ''
       version_added: 1.0.0
+    edit_m6_log_setting:
+      description: Set bmc system and audit log setting
+      name: edit_m6_log_setting
+      namespace: ''
+      version_added: 1.3.0
     edit_manual_capture:
       description: Set manual capture screen
       name: edit_manual_capture
@@ -568,6 +573,11 @@ plugins:
       name: snmp_trap_info
       namespace: ''
       version_added: 1.0.0
+    support_info:
+      description: Get support information
+      name: support_info
+      namespace: ''
+      version_added: 1.3.0
     system_log_info:
       description: Get BMC system log information
       name: system_log_info
@@ -632,4 +642,4 @@ plugins:
   shell: {}
   strategy: {}
   vars: {}
-version: 1.2.0
+version: 1.3.0

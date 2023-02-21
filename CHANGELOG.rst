@@ -5,6 +5,55 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v1.3.0
+======
+
+Minor Changes
+-------------
+
+- Change the ansible-test.yml application file version.
+- Change the description of the edit_bios module file_url field.
+- Modify the description information of the backup module item field.
+- Modify the description of the media_attach, retry_count, and retry_time_interval fields of the edit_kvm module.
+- Modify the description of the secure_channel field of the edit_media_instance module.
+- Modify the description of the slot and vname fields of the add_ldisk module.
+- Modify the edit_ntp module example.
+- Modify the edit_snmp_trap module version field description information.
+- Modify the mode field description information of update_fw module.
+- Modify the name field description of the user_group module.
+- Modify the restore module example.
+- Modify the supporting properties and description information of the edit_ncsi module edit_ncsi field.
+- The edit_power_budget module adds the except_action field.
+
+New Modules
+-----------
+
+- inspur.ispim.edit_m6_log_setting - Set bmc system and audit log setting
+- inspur.ispim.support_info - Get support information
+
+v1.2.0
+======
+
+Minor Changes
+-------------
+
+- Modify the tags fields in Galaxy.yml.
+- edit_power_budget add 'domain' field.
+- edit_snmp module add 'v1status','v2status','v3status','read_community','read_write_community' fields.
+- edit_snmp_trap module modifies the version value.
+- eidt_ad module add 'ssl_enalbe' field, modify the timeout field description.
+- eidt_ldisk module add 'duration' field.
+- eidt_pdisk module add 'duration' field.
+- modify the edit_log_setting module description.
+- modify the edit_ncsi module description and parameter values.
+- user module add 'uid','access' fields.
+- user_group module add 'general','power','media','kvm','security','debug','self' fields.
+
+Bugfixes
+--------
+
+- edit_snmp_trap module modifies input parameter errors in the example.
+
 v1.1.0
 ======
 
