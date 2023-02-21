@@ -287,7 +287,7 @@ Parameters
                     <b>server_port</b>
                     <a class="ansibleOptionLink" href="#parameter-server_port" title="Permalink to this option"></a>
                     <div style="font-size: small">
-                        <span style="color: purple">string</span>
+                        <span style="color: purple">integer</span>
                                                                     </div>
                                                         </td>
                                 <td>
@@ -396,7 +396,7 @@ Examples
           protocol_type: "TCP"
           server_id: 0
           server_addr: "100.2.126.11"
-          server_port: "514"
+          server_port: 514
           log_type: "both"
           provider: "{{ ism }}"
 

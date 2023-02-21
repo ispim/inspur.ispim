@@ -119,7 +119,7 @@ class NCSI(object):
 
 def main():
     argument_spec = dict(
-        nic_type=dict(type='str', required=False, choices=['PHY', 'OCP', 'PCIE', 'auto', 'Disable']),
+        nic_type=dict(type='str', required=False, choices=['PHY', 'OCP', 'OCP1', 'PCIE', 'auto', 'Disable']),
         mode=dict(type='str', required=False, choices=['auto', 'manual', 'Disable']),
         interface_name=dict(type='str', required=False),
         channel_number=dict(type='int', required=False, choices=[0, 1, 2, 3]),

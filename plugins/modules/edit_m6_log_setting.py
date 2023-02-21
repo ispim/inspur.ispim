@@ -53,7 +53,7 @@ options:
     server_port:
         description:
             - Server Address,set when server_id is not none.
-        type: str
+        type: int
     log_type:
         description:
             - Remote Log Type,set when server_id is not none.
@@ -94,7 +94,7 @@ EXAMPLES = '''
       protocol_type: "TCP"
       server_id: 0
       server_addr: "100.2.126.11"
-      server_port: "514"
+      server_port: 514
       log_type: "both"
       provider: "{{ ism }}"
 
@@ -161,7 +161,7 @@ def main():
         server_id=dict(type='int', required=False, choices=[0, 1, 2, 3]),
         server_addr=dict(type='str', required=False),
         server_port=dict(type='int', required=False),
-        log_type=dict(type='str', required=False, choices=['idl', 'audit', 'sel', 'both']),
+        log_type=dict(type='str', required=False, choices=['idl', 'audit', 'both']),
         test=dict(type='bool', required=False, default=False),
 
 
