@@ -450,3 +450,14 @@ releases:
       name: support_info
       namespace: ''
     release_date: '2023-02-21'
+  2.0.0:
+    changes:
+      minor_changes:
+      - The edit_bios module adds the list field.
+    fragments:
+    - 20-release 2.0.0.yaml
+    modules:
+    - description: Update PSU
+      name: update_psu
+      namespace: ''
+    release_date: '2023-05-29'
