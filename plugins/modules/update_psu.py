@@ -10,42 +10,33 @@ __metaclass__ = type
 
 DOCUMENTATION = '''
 ---
-module: edit_bios
-version_added: "1.0.0"
+module: update_psu
+version_added: "2.0.0"
 author:
     - WangBaoshan (@ispim)
-short_description: Set BIOS setup attributes
+short_description: Update PSU
 description:
-   - Set BIOS setup attributes on Inspur server.
+   - Update psu on Inspur server.
 notes:
    - Does not support C(check_mode).
 options:
-    list:
+    url:
         description:
-            - show attribute name and configurable value.
-        default: False
-        type: bool
-    attribute:
-        description:
-            - BIOS setup option.
-            - Required when I(list=False) and I(file_url=None).
+            - Firmware image url.
+        required: true
         type: str
-    value:
+    mode:
         description:
-            - BIOS setup option value.
-            - Required when I(list=False) and I(file_url=None).
-        type: str
-    file_url:
-        description:
-            - BIOS option file.attribute must be used with value,
-            - Mutually exclusive with fileurl format,"/directory/filename".
+            - Server Auto Reset Option, Manual or Auto(default).
+        default: Auto
+        choices: ['Auto', 'Manual']
         type: str
 extends_documentation_fragment:
     - inspur.ispim.ism
 '''
 
 EXAMPLES = '''
-- name: Bios test
+- name: Update psu test
   hosts: ism
   connection: local
   gather_facts: no
@@ -57,16 +48,10 @@ EXAMPLES = '''
 
   tasks:
 
-  - name: "Set bios setup"
-    inspur.ispim.edit_bios:
-      attribute: "VMX"
-      value: "Disable"
-      provider: "{{ ism }}"
-
-  - name: "Set bios setup"
-    inspur.ispim.edit_bios:
-      attribute: "VMX"
-      value: "Enable"
+  - name: "update psu"
+    inspur.ispim.update_psu:
+      url: "/home/wbs/CRPS1300D2W_00.01.04_BootLoader_Pri_Sec.hpm"
+      mode: "Auto"
       provider: "{{ ism }}"
 '''
 
@@ -89,7 +74,7 @@ from ansible.module_utils.basic import AnsibleModule
 from ansible_collections.inspur.ispim.plugins.module_utils.ism import (ism_argument_spec, get_connection)
 
 
-class BIOS(object):
+class Update(object):
     def __init__(self, argument_spec):
         self.spec = argument_spec
         self.module = None
@@ -103,7 +88,7 @@ class BIOS(object):
             argument_spec=self.spec, supports_check_mode=False)
 
     def run_command(self):
-        self.module.params['subcommand'] = 'setbios'
+        self.module.params['subcommand'] = 'updatepsu'
         self.results = get_connection(self.module)
         if self.results['State'] == 'Success':
             self.results['changed'] = True
@@ -120,14 +105,12 @@ class BIOS(object):
 
 def main():
     argument_spec = dict(
-        list=dict(type='bool', required=False, default=False),
-        attribute=dict(type='str', required=False),
-        value=dict(type='str', required=False),
-        file_url=dict(type='str', required=False)
+        url=dict(type='str', required=True),
+        mode=dict(type='str', default='Auto', choices=['Auto', 'Manual']),
     )
     argument_spec.update(ism_argument_spec)
-    bios_obj = BIOS(argument_spec)
-    bios_obj.work()
+    update_obj = Update(argument_spec)
+    update_obj.work()
 
 
 if __name__ == '__main__':

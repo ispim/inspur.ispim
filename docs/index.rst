@@ -134,6 +134,7 @@ Modules
 * :ref:`uid_info <ansible_collections.inspur.ispim.uid_info_module>` -- Get UID information
 * :ref:`update_cpld <ansible_collections.inspur.ispim.update_cpld_module>` -- Update CPLD
 * :ref:`update_fw <ansible_collections.inspur.ispim.update_fw_module>` -- Update firmware
+* :ref:`update_psu <ansible_collections.inspur.ispim.update_psu_module>` -- Update PSU
 * :ref:`user <ansible_collections.inspur.ispim.user_module>` -- Manage user
 * :ref:`user_group <ansible_collections.inspur.ispim.user_group_module>` -- Manage user group
 * :ref:`user_group_info <ansible_collections.inspur.ispim.user_group_info_module>` -- Get user group information
