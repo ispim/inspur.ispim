@@ -5,6 +5,19 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v2.0.0
+======
+
+Minor Changes
+-------------
+
+- The edit_bios module adds the list field.
+
+New Modules
+-----------
+
+- inspur.ispim.update_psu - Update PSU
+
 v1.3.0
 ======
 

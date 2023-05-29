@@ -608,6 +608,11 @@ plugins:
       name: update_fw
       namespace: ''
       version_added: 1.0.0
+    update_psu:
+      description: Update PSU
+      name: update_psu
+      namespace: ''
+      version_added: 2.0.0
     user:
       description: Manage user
       name: user
@@ -642,4 +647,4 @@ plugins:
   shell: {}
   strategy: {}
   vars: {}
-version: 1.3.0
+version: 2.0.0
