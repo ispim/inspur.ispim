@@ -4,7 +4,7 @@
 
 .. Anchors
 
-.. _ansible_collections.inspur.ispim.edit_bios_module:
+.. _ansible_collections.inspur.ispim.update_psu_module:
 
 .. Anchors: short name for ansible.builtin
 
@@ -14,8 +14,8 @@
 
 .. Title
 
-inspur.ispim.edit_bios -- Set BIOS setup attributes
-+++++++++++++++++++++++++++++++++++++++++++++++++++
+inspur.ispim.update_psu -- Update PSU
++++++++++++++++++++++++++++++++++++++
 
 .. Collection note
 
@@ -24,11 +24,11 @@ inspur.ispim.edit_bios -- Set BIOS setup attributes
 
     To install it use: :code:`ansible-galaxy collection install inspur.ispim`.
 
-    To use it in a playbook, specify: :code:`inspur.ispim.edit_bios`.
+    To use it in a playbook, specify: :code:`inspur.ispim.update_psu`.
 
 .. version_added
 
-.. versionadded:: 1.0.0 of inspur.ispim
+.. versionadded:: 2.0.0 of inspur.ispim
 
 .. contents::
    :local:
@@ -42,7 +42,7 @@ Synopsis
 
 .. Description
 
-- Set BIOS setup attributes on Inspur server.
+- Update psu on Inspur server.
 
 
 .. Aliases
@@ -73,38 +73,6 @@ Parameters
         </tr>
                     <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-attribute"></div>
-                    <b>attribute</b>
-                    <a class="ansibleOptionLink" href="#parameter-attribute" title="Permalink to this option"></a>
-                    <div style="font-size: small">
-                        <span style="color: purple">string</span>
-                                                                    </div>
-                                                        </td>
-                                <td>
-                                                                                                                                                            </td>
-                                                                <td>
-                                            <div>BIOS setup option.</div>
-                                            <div>Required when <em>list=False</em> and <em>file_url=None</em>.</div>
-                                                        </td>
-            </tr>
-                                <tr>
-                                                                <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-file_url"></div>
-                    <b>file_url</b>
-                    <a class="ansibleOptionLink" href="#parameter-file_url" title="Permalink to this option"></a>
-                    <div style="font-size: small">
-                        <span style="color: purple">string</span>
-                                                                    </div>
-                                                        </td>
-                                <td>
-                                                                                                                                                            </td>
-                                                                <td>
-                                            <div>BIOS option file.attribute must be used with value,</div>
-                                            <div>Mutually exclusive with fileurl format,&quot;/directory/filename&quot;.</div>
-                                                        </td>
-            </tr>
-                                <tr>
-                                                                <td colspan="2">
                     <div class="ansibleOptionAnchor" id="parameter-host"></div>
                     <b>host</b>
                     <a class="ansibleOptionLink" href="#parameter-host" title="Permalink to this option"></a>
@@ -120,21 +88,21 @@ Parameters
             </tr>
                                 <tr>
                                                                 <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-list"></div>
-                    <b>list</b>
-                    <a class="ansibleOptionLink" href="#parameter-list" title="Permalink to this option"></a>
+                    <div class="ansibleOptionAnchor" id="parameter-mode"></div>
+                    <b>mode</b>
+                    <a class="ansibleOptionLink" href="#parameter-mode" title="Permalink to this option"></a>
                     <div style="font-size: small">
-                        <span style="color: purple">boolean</span>
+                        <span style="color: purple">string</span>
                                                                     </div>
                                                         </td>
                                 <td>
-                                                                                                                                                                                                                    <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li><div style="color: blue"><b>no</b>&nbsp;&larr;</div></li>
-                                                                                                                                                                                                <li>yes</li>
+                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
+                                                                                                                                                                <li><div style="color: blue"><b>Auto</b>&nbsp;&larr;</div></li>
+                                                                                                                                                                                                <li>Manual</li>
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>show attribute name and configurable value.</div>
+                                            <div>Server Auto Reset Option, Manual or Auto(default).</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -218,6 +186,21 @@ Parameters
                     
                                 <tr>
                                                                 <td colspan="2">
+                    <div class="ansibleOptionAnchor" id="parameter-url"></div>
+                    <b>url</b>
+                    <a class="ansibleOptionLink" href="#parameter-url" title="Permalink to this option"></a>
+                    <div style="font-size: small">
+                        <span style="color: purple">string</span>
+                                                 / <span style="color: red">required</span>                    </div>
+                                                        </td>
+                                <td>
+                                                                                                                                                            </td>
+                                                                <td>
+                                            <div>Firmware image url.</div>
+                                                        </td>
+            </tr>
+                                <tr>
+                                                                <td colspan="2">
                     <div class="ansibleOptionAnchor" id="parameter-username"></div>
                     <b>username</b>
                     <a class="ansibleOptionLink" href="#parameter-username" title="Permalink to this option"></a>
@@ -229,22 +212,6 @@ Parameters
                                                                                                                                                             </td>
                                                                 <td>
                                             <div>Configures the username to use to authenticate the connection to the remote device. If the value is not specified in the task, the value of environment variable <code>ANSIBLE_NET_USERNAME</code> will be used instead.</div>
-                                                        </td>
-            </tr>
-                                <tr>
-                                                                <td colspan="2">
-                    <div class="ansibleOptionAnchor" id="parameter-value"></div>
-                    <b>value</b>
-                    <a class="ansibleOptionLink" href="#parameter-value" title="Permalink to this option"></a>
-                    <div style="font-size: small">
-                        <span style="color: purple">string</span>
-                                                                    </div>
-                                                        </td>
-                                <td>
-                                                                                                                                                            </td>
-                                                                <td>
-                                            <div>BIOS setup option value.</div>
-                                            <div>Required when <em>list=False</em> and <em>file_url=None</em>.</div>
                                                         </td>
             </tr>
                         </table>
@@ -269,7 +236,7 @@ Examples
 .. code-block:: yaml+jinja
 
     
-    - name: Bios test
+    - name: Update psu test
       hosts: ism
       connection: local
       gather_facts: no
@@ -281,16 +248,10 @@ Examples
 
       tasks:
 
-      - name: "Set bios setup"
-        inspur.ispim.edit_bios:
-          attribute: "VMX"
-          value: "Disable"
-          provider: "{{ ism }}"
-
-      - name: "Set bios setup"
-        inspur.ispim.edit_bios:
-          attribute: "VMX"
-          value: "Enable"
+      - name: "update psu"
+        inspur.ispim.update_psu:
+          url: "/home/wbs/CRPS1300D2W_00.01.04_BootLoader_Pri_Sec.hpm"
+          mode: "Auto"
           provider: "{{ ism }}"
 
 
