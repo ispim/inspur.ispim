@@ -28,7 +28,7 @@ options:
     ctrl_id:
         description:
             - Raid controller ID.
-            - Required when I(Info=None) and controller type is LSI or PMC.
+            - Required when I(Info=None) and controller type is LSI,PMC or MV.
         type: int
     level:
         description:
@@ -38,9 +38,11 @@ options:
         type: int
     size:
         description:
-            - Strip Size, 1 - 64k, 2 - 128k, 3 - 256k, 4 - 512k, 5 - 1024k.
-            - Required when I(Info=None) and controller type is LSI or PMC.
-        choices: [1, 2, 3, 4, 5]
+            - Strip Size, 0 - 32k, 1 - 64k, 2 - 128k, 3 - 256k, 4 - 512k, 5 - 1024k.
+            - Required when I(Info=None) and controller type is LSI,PMC or MV.
+            - When the controller type is MV,size is [0, 1].
+            - When the controller type is LSI or PMC,size is [1, 2, 3, 4, 5].
+        choices: [0, 1, 2, 3, 4, 5]
         type: int
     access:
         description:
@@ -56,7 +58,7 @@ options:
         type: int
     w:
         description:
-            - Write Policy, 1 - Write Throgh, 2 - Write Back, 3 - Write caching ok if bad BBU.
+            - Write Policy, 1 - Write Through, 2 - Write Back, 3 - Write caching ok if bad BBU.
             - Required when I(Info=None) and controller type is LSI.
         choices: [1, 2, 3]
         type: int
@@ -99,6 +101,7 @@ options:
         description:
             - Virtual drive name.
             - Required when I(Info=None) and controller type is PMC or server model is M7.
+            - Required when I(Info=None) and controller type is MV.
         type: str
 extends_documentation_fragment:
     - inspur.ispim.ism
@@ -122,7 +125,7 @@ EXAMPLES = '''
       info: "show"
       provider: "{{ ism }}"
 
-  - name: "Add ldisk"
+  - name: "Add LSI ldisk"
     inspur.ispim.add_ldisk:
       ctrl_id: 0
       level: 1
@@ -137,13 +140,20 @@ EXAMPLES = '''
       slot: 0,1
       provider: "{{ ism }}"
 
-  - name: "Add PMC  ldisk"
+  - name: "Add PMC ldisk"
     inspur.ispim.add_ldisk:
       ctrl_id: 0
       level: 1
       size: 1
       accelerator: 1
       slot: 0,1
+      vname: "test"
+      provider: "{{ ism }}"
+
+  - name: "Add MV ldisk"
+    inspur.ispim.add_ldisk:
+      ctrl_id: 0
+      size: 1
       vname: "test"
       provider: "{{ ism }}"
 '''
@@ -201,7 +211,7 @@ def main():
         info=dict(type='str', required=False, choices=['show']),
         ctrl_id=dict(type='int', required=False),
         level=dict(type='int', required=False, choices=[0, 1, 5, 6, 10]),
-        size=dict(type='int', required=False, choices=[1, 2, 3, 4, 5]),
+        size=dict(type='int', required=False, choices=[0, 1, 2, 3, 4, 5]),
         access=dict(type='int', required=False, choices=[1, 2, 3]),
         r=dict(type='int', required=False, choices=[1, 2]),
         w=dict(type='int', required=False, choices=[1, 2, 3]),
