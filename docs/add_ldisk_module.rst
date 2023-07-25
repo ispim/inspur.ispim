@@ -147,7 +147,7 @@ Parameters
                                                                                                                                                             </td>
                                                                 <td>
                                             <div>Raid controller ID.</div>
-                                            <div>Required when <em>Info=None</em> and controller type is LSI or PMC.</div>
+                                            <div>Required when <em>Info=None</em> and controller type is LSI,PMC or MV.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -373,7 +373,8 @@ Parameters
                                                         </td>
                                 <td>
                                                                                                                             <ul style="margin: 0; padding: 0"><b>Choices:</b>
-                                                                                                                                                                <li>1</li>
+                                                                                                                                                                <li>0</li>
+                                                                                                                                                                                                <li>1</li>
                                                                                                                                                                                                 <li>2</li>
                                                                                                                                                                                                 <li>3</li>
                                                                                                                                                                                                 <li>4</li>
@@ -381,8 +382,10 @@ Parameters
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>Strip Size, 1 - 64k, 2 - 128k, 3 - 256k, 4 - 512k, 5 - 1024k.</div>
-                                            <div>Required when <em>Info=None</em> and controller type is LSI or PMC.</div>
+                                            <div>Strip Size, 0 - 32k, 1 - 64k, 2 - 128k, 3 - 256k, 4 - 512k, 5 - 1024k.</div>
+                                            <div>Required when <em>Info=None</em> and controller type is LSI,PMC or MV.</div>
+                                            <div>When the controller type is MV,size is [0, 1].</div>
+                                            <div>When the controller type is LSI or PMC,size is [1, 2, 3, 4, 5].</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -430,6 +433,7 @@ Parameters
                                                                 <td>
                                             <div>Virtual drive name.</div>
                                             <div>Required when <em>Info=None</em> and controller type is PMC or server model is M7.</div>
+                                            <div>Required when <em>Info=None</em> and controller type is MV.</div>
                                                         </td>
             </tr>
                                 <tr>
@@ -449,7 +453,7 @@ Parameters
                                                                                     </ul>
                                                                             </td>
                                                                 <td>
-                                            <div>Write Policy, 1 - Write Throgh, 2 - Write Back, 3 - Write caching ok if bad BBU.</div>
+                                            <div>Write Policy, 1 - Write Through, 2 - Write Back, 3 - Write caching ok if bad BBU.</div>
                                             <div>Required when <em>Info=None</em> and controller type is LSI.</div>
                                                         </td>
             </tr>
@@ -492,7 +496,7 @@ Examples
           info: "show"
           provider: "{{ ism }}"
 
-      - name: "Add ldisk"
+      - name: "Add LSI ldisk"
         inspur.ispim.add_ldisk:
           ctrl_id: 0
           level: 1
@@ -507,13 +511,20 @@ Examples
           slot: 0,1
           provider: "{{ ism }}"
 
-      - name: "Add PMC  ldisk"
+      - name: "Add PMC ldisk"
         inspur.ispim.add_ldisk:
           ctrl_id: 0
           level: 1
           size: 1
           accelerator: 1
           slot: 0,1
+          vname: "test"
+          provider: "{{ ism }}"
+
+      - name: "Add MV ldisk"
+        inspur.ispim.add_ldisk:
+          ctrl_id: 0
+          size: 1
           vname: "test"
           provider: "{{ ism }}"
 
