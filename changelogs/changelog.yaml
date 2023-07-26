@@ -461,3 +461,12 @@ releases:
       name: update_psu
       namespace: ''
     release_date: '2023-05-29'
+  2.0.1:
+    changes:
+      minor_changes:
+      - Change the ansible-test.yml application file version.
+      - Modify logical disk creation, add MV raid card compatible.
+    fragments:
+    - 21-ansible_test.yaml
+    - 24-add_ldisk.yaml
+    release_date: '2023-07-25'
