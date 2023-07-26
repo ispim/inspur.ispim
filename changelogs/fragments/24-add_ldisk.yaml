@@ -1,0 +1,2 @@
+minor_changes:
+  - Modify logical disk creation, add MV raid card compatible.
