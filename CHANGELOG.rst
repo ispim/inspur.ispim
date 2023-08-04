@@ -5,6 +5,23 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v2.1.0
+======
+
+New Modules
+-----------
+
+- inspur.ispim.hba_info - Get CPU information
+
+v2.0.1
+======
+
+Minor Changes
+-------------
+
+- Change the ansible-test.yml application file version.
+- Modify logical disk creation, add MV raid card compatible.
+
 v2.0.0
 ======
 
