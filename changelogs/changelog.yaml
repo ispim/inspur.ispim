@@ -470,3 +470,9 @@ releases:
     - 21-ansible_test.yaml
     - 24-add_ldisk.yaml
     release_date: '2023-07-25'
+  2.1.0:
+    modules:
+    - description: Get CPU information
+      name: hba_info
+      namespace: ''
+    release_date: '2023-08-04'

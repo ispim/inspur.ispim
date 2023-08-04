@@ -393,6 +393,11 @@ plugins:
       name: hard_disk_info
       namespace: ''
       version_added: 1.0.0
+    hba_info:
+      description: Get CPU information
+      name: hba_info
+      namespace: ''
+      version_added: 2.1.0
     kvm_info:
       description: Get KVM information
       name: kvm_info
@@ -647,4 +652,4 @@ plugins:
   shell: {}
   strategy: {}
   vars: {}
-version: 2.0.1
+version: 2.1.0
