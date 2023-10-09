@@ -78,18 +78,22 @@ options:
     host_name:
         description:
             - Server name.
+        choices: ['enable', 'disable']
         type: str
     serial_number:
         description:
             - Serial number.
+        choices: ['enable', 'disable']
         type: str
     asset_tag:
         description:
             - product asset label,
+        choices: ['enable', 'disable']
         type: str
     event_level:
         description:
             - Events above this level will be sent.
+        choices: ['Info', 'Warning', 'Critical']
         type: str
 extends_documentation_fragment:
     - inspur.ispim.ism
@@ -186,10 +190,10 @@ def main():
         ssl_tls_enable=dict(type='str', required=False, choices=['enable', 'disable']),
         star_tls_enable=dict(type='str', required=False, choices=['enable', 'disable']),
         subject=dict(type='str', required=False),
-        host_name=dict(type='str', required=False),
-        serial_number=dict(type='str', required=False),
-        asset_tag=dict(type='str', required=False),
-        event_level=dict(type='str', required=False),
+        host_name=dict(type='str', required=False, choices=['enable', 'disable']),
+        serial_number=dict(type='str', required=False, choices=['enable', 'disable']),
+        asset_tag=dict(type='str', required=False, choices=['enable', 'disable']),
+        event_level=dict(type='str', required=False, choices=['Info', 'Warning', 'Critical']),
     )
     argument_spec.update(ism_argument_spec)
     smtp_obj = SMTP(argument_spec)
