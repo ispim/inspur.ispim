@@ -476,3 +476,10 @@ releases:
       name: hba_info
       namespace: ''
     release_date: '2023-08-04'
+  2.2.0:
+    changes:
+      minor_changes:
+      - Modify edit_smtp_com and add description information.
+    fragments:
+    - 29-edit_smtp_com.yaml
+    release_date: '2023-11-28'
