@@ -5,6 +5,14 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v2.2.0
+======
+
+Minor Changes
+-------------
+
+- Modify edit_smtp_com and add description information.
+
 v2.1.0
 ======
 

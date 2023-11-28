@@ -82,7 +82,11 @@ Parameters
                                                                     </div>
                                                         </td>
                                 <td>
-                                                                                                                                                            </td>
+                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
+                                                                                                                                                                <li>enable</li>
+                                                                                                                                                                                                <li>disable</li>
+                                                                                    </ul>
+                                                                            </td>
                                                                 <td>
                                             <div>product asset label,</div>
                                                         </td>
@@ -112,7 +116,12 @@ Parameters
                                                                     </div>
                                                         </td>
                                 <td>
-                                                                                                                                                            </td>
+                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
+                                                                                                                                                                <li>Info</li>
+                                                                                                                                                                                                <li>Warning</li>
+                                                                                                                                                                                                <li>Critical</li>
+                                                                                    </ul>
+                                                                            </td>
                                                                 <td>
                                             <div>Events above this level will be sent.</div>
                                                         </td>
@@ -142,7 +151,11 @@ Parameters
                                                                     </div>
                                                         </td>
                                 <td>
-                                                                                                                                                            </td>
+                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
+                                                                                                                                                                <li>enable</li>
+                                                                                                                                                                                                <li>disable</li>
+                                                                                    </ul>
+                                                                            </td>
                                                                 <td>
                                             <div>Server name.</div>
                                                         </td>
@@ -236,7 +249,11 @@ Parameters
                                                                     </div>
                                                         </td>
                                 <td>
-                                                                                                                                                            </td>
+                                                                                                                            <ul style="margin: 0; padding: 0"><b>Choices:</b>
+                                                                                                                                                                <li>enable</li>
+                                                                                                                                                                                                <li>disable</li>
+                                                                                    </ul>
+                                                                            </td>
                                                                 <td>
                                             <div>Serial number.</div>
                                                         </td>
