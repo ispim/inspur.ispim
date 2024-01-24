@@ -1,0 +1,2 @@
+minor_changes:
+   - Modify ansible-test.yml to add the ansible2.16 test.
