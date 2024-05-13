@@ -5,6 +5,15 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v2.2.1
+======
+
+Minor Changes
+-------------
+
+- Modify ansible-test.yml to add the ansible 2.17 test https://github.com/ispim/inspur.ispim/pull/33.
+- Modify ansible-test.yml to add the ansible2.16 test.
+
 v2.2.0
 ======
 

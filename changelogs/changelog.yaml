@@ -483,3 +483,12 @@ releases:
     fragments:
     - 29-edit_smtp_com.yaml
     release_date: '2023-11-28'
+  2.2.1:
+    changes:
+      minor_changes:
+      - Modify ansible-test.yml to add the ansible 2.17 test https://github.com/ispim/inspur.ispim/pull/33.
+      - Modify ansible-test.yml to add the ansible2.16 test.
+    fragments:
+    - 31-edit_ansible-test.yml
+    - 32-edit_ansible-test-2.17.yml
+    release_date: '2024-05-13'
