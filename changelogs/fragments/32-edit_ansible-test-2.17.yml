@@ -1,0 +1,2 @@
+minor_changes:
+   - Modify ansible-test.yml to add the ansible 2.17 test https://github.com/ispim/inspur.ispim/pull/32.

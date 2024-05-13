@@ -4,17 +4,17 @@ This repo contains the `inspur.ispim` Ansible Collection. Inspur server supports
 
 ## Tested with Ansible
 
-Tested with the current Ansible 2.10 releases and the current development version of Ansible. Ansible versions before 2.10.0 are not supported.
+Tested with the current Ansible 2.15 releases and the current development version of Ansible. Ansible versions before 2.10.0 are not supported.
 
 ## External requirements
 
 Circumstance instruction:
-Ansible module is suitable for ansible version 2.10
+Ansible module is suitable for ansible version 2.15
 
 Main steps:
 
-Install Ansible 2.10
-Install inspursmsdk 
+* Install Ansible 2.15
+* Install inspursmsdk: pip install inspursmsdk
 <!--- A step-by-step reproduction of the problem is helpful if there is no related issue -->
 Thes modules require the following to be installed on the control node:
 
