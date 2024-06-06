@@ -5,6 +5,14 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v2.2.2
+======
+
+Bugfixes
+--------
+
+- Remove venv files that were accidentally bundled in 2.2.1 (https://github.com/ispim/inspur.ispim/pull/35).
+
 v2.2.1
 ======
 

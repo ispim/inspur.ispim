@@ -492,3 +492,10 @@ releases:
     - 31-edit_ansible-test.yml
     - 32-edit_ansible-test-2.17.yml
     release_date: '2024-05-13'
+  2.2.2:
+    changes:
+      bugfixes:
+      - Remove venv files that were accidentally bundled in 2.2.1 (https://github.com/ispim/inspur.ispim/pull/35).
+    fragments:
+    - 35-delete_venv.yml
+    release_date: '2024-06-06'
