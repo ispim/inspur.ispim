@@ -5,6 +5,14 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v2.2.3
+======
+
+Bugfixes
+--------
+
+- Change the ansible version in meta/runtime.yml to 2.15.0(https://github.com/ispim/inspur.ispim/pull/37).
+
 v2.2.2
 ======
 
