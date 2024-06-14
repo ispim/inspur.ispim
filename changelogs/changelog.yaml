@@ -499,3 +499,10 @@ releases:
     fragments:
     - 35-delete_venv.yml
     release_date: '2024-06-06'
+  2.2.3:
+    changes:
+      bugfixes:
+      - Change the ansible version in meta/runtime.yml to 2.15.0(https://github.com/ispim/inspur.ispim/pull/37).
+    fragments:
+    - 37-edit_ansible_version.yml
+    release_date: '2024-06-14'
