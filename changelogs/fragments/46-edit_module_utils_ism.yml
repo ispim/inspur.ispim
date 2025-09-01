@@ -1,0 +1,2 @@
+bugfixes:
+  - "Modify the ism.py file in the module_utils directory, and change the reference path of iteritems to be a reference from within Python. (https://github.com/ispim/inspur.ispim/pull/46)."
