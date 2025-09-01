@@ -11,7 +11,6 @@ try:
 except ImportError:
     ism_temp = False
 from ansible.module_utils.basic import env_fallback
-import iteritems
 
 ism_provider_spec = {
     'host': dict(type='str'),
@@ -32,7 +31,7 @@ ism_argument_spec.update(ism_top_spec)
 def load_params(module):
     """load_params"""
     provider = module.params.get('provider') or dict()
-    for key, value in iteritems(provider):
+    for key, value in provider.items():
         if key in ism_argument_spec:
             if module.params.get(key) is None and value is not None:
                 module.params[key] = value
