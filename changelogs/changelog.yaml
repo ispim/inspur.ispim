@@ -506,3 +506,17 @@ releases:
     fragments:
     - 37-edit_ansible_version.yml
     release_date: '2024-06-14'
+  2.2.4:
+    changes:
+      bugfixes:
+      - Edit ansible devel version tests to our CI test scripts  (https://github.com/ispim/inspur.ispim/pull/39).
+      - Modify the automated tests and add support for version 2.18. (https://github.com/ispim/inspur.ispim/pull/40).
+      - Modify the automated tests and add support for version 2.18. (https://github.com/ispim/inspur.ispim/pull/45).
+      - Modify the ism.py file in the module_utils directory, and change the reference
+        path of iteritems to be a reference from within Python. (https://github.com/ispim/inspur.ispim/pull/46).
+    fragments:
+    - 39-edit_CI_devel.yml
+    - 40-add_CI_2.18.yml
+    - 45-add_CI_2.18.yml
+    - 46-edit_module_utils_ism.yml
+    release_date: '2025-12-01'
