@@ -5,6 +5,17 @@ Inspur.Ispim Release Notes
 .. contents:: Topics
 
 
+v2.2.4
+======
+
+Bugfixes
+--------
+
+- Edit ansible devel version tests to our CI test scripts  (https://github.com/ispim/inspur.ispim/pull/39).
+- Modify the automated tests and add support for version 2.18. (https://github.com/ispim/inspur.ispim/pull/40).
+- Modify the automated tests and add support for version 2.18. (https://github.com/ispim/inspur.ispim/pull/45).
+- Modify the ism.py file in the module_utils directory, and change the reference path of iteritems to be a reference from within Python. (https://github.com/ispim/inspur.ispim/pull/46).
+
 v2.2.3
 ======
 

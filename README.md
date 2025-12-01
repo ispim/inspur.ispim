@@ -1,4 +1,4 @@
-# inspur sm Collection
+# inspur ispim Collection
 
 This repo contains the `inspur.ispim` Ansible Collection. Inspur server supports ansible management device,Basic management of the server based on restful interface.
 
