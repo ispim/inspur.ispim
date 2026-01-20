@@ -18,7 +18,6 @@ jobs:
         - stable-2.20
         - devel
         python-version:
-        - '3.9'
         - '3.10'
         - '3.11'
         - '3.12'
@@ -29,10 +28,6 @@ jobs:
             python-version: '3.14'
           - ansible: stable-2.19
             python-version: '3.14'
-          - ansible: stable-2.20
-            python-version: '3.9'
-          - ansible: devel
-            python-version: '3.9'
     runs-on: ubuntu-latest
     steps:
 
